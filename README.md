@@ -8,9 +8,8 @@
             list.add(5);
             list.add(10);
             list.add(20);
-            Iterator iterator = list.iterator();
-            while(iterator.hasNext()) {
-                System.out.println(iterator.next());
+            for(var item : list) {
+                System.out.println(item);
             }
         }
     }
@@ -52,5 +51,5 @@
         }
     }
     
-###
+### 
 
