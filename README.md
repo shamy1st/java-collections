@@ -1,2 +1,1 @@
-# java-collections
-Java Collections
+# Java Collections
