@@ -2,6 +2,8 @@
 
 ### Generic List Iterator
 
+**Iterable** is an interface contains only one abstract method. [ Iterator<T> iterator() ]
+
     public class Main {
         public static void main(String[] args) {
             GenericList<Integer> list = new GenericList<>();
@@ -51,5 +53,5 @@
         }
     }
     
-### 
+**Collection** is a container for other objects, with common operations [ add(), remove(), contains() ]
 
