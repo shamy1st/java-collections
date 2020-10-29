@@ -131,5 +131,3 @@
             return this.name;
         }
     }
-
-### ArrayList
