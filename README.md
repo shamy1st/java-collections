@@ -55,3 +55,39 @@
     
 **Collection** is an interface acts as container for other objects, with common operations add(), remove(), contains()
 
+**List** is an interface store the inserted order of elements. (allow duplicate values)
+
+### Sort Data using Comparable Interface
+
+    public class Main {
+        public static void main(String[] args) {
+            List<Customer> customers = new ArrayList<>();
+            customers.add(new Customer("2"));
+            customers.add(new Customer("3"));
+            customers.add(new Customer("1"));
+            Collections.sort(customers);
+            System.out.println(customers);
+        }
+    }
+
+    public class Customer implements Comparable<Customer> {
+        private String name;
+
+        public Customer(String name) {
+            this.name = name;
+        }
+
+        @Override
+        public int compareTo(Customer other) {
+            return this.name.compareTo(other.name);
+        }
+
+        @Override
+        public String toString() {
+            return this.name;
+        }
+    }
+    
+###     
+
+### ArrayList
