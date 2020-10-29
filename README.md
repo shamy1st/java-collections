@@ -53,5 +53,5 @@
         }
     }
     
-**Collection** is a container for other objects, with common operations [ add(), remove(), contains() ]
+**Collection** is a interface acts as container for other objects, with common operations [ add(), remove(), contains() ]
 
