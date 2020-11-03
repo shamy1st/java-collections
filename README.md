@@ -9,8 +9,8 @@ Hierarchy | Map
 ---------- | ---
 ![](https://github.com/shamy1st/java-collections/blob/main/collection-hierarchy.png) | ![](https://github.com/shamy1st/java-collections/blob/main/map-hierarchy.png)
 
- | Insertion Order | Unique Elements | Sorted | Synchronized | Intial Size | Implementation
- | --------------- | --------------- | ------ | ------------ | ----------- | --------------
+Class | Insertion Order | Unique Elements | Sorted | Synchronized | Intial Size | Implementation
+----- | --------------- | --------------- | ------ | ------------ | ----------- | --------------
 ArrayList | Yes | - | - | - | 0 | Dynamic Array
 
 ### List Iterator
