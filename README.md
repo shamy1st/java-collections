@@ -4,9 +4,14 @@
 **Collection** is an interface acts as container for other objects, with common operations add(), remove(), contains()
 
 **List** is an interface store the inserted order of elements. (allow duplicate values)
- Hierarchy | Map
+
+Hierarchy | Map
 ---------- | ---
 ![](https://github.com/shamy1st/java-collections/blob/main/collection-hierarchy.png) | ![](https://github.com/shamy1st/java-collections/blob/main/map-hierarchy.png)
+
+- | Insertion Order | Unique Elements | Sorted | Synchronized | Intial Size | Implementation
+- | --------------- | --------------- | ------ | ------------ | ----------- | --------------
+ArrayList | Yes | - | - | - | 0 | Dynamic Array
 
 ### List Iterator
 
