@@ -13,7 +13,7 @@
 
 ### Properties
 
-Class | Insertion Order | Unique Elements | Sorted | Random Access | Synchronized | Intial Size | Load Factor | Implementation
+Class | Insertion Order | Unique Elements | Sorted | Random Access | Thread Safe | Intial Size | Load Factor | Implementation
 ----- | --------------- | --------------- | ------ | ------------- | ------------ | ----------- | ----------- | --------------
 ArrayList | Yes | - | - | Yes | - | 0 |  | Dynamic Array
 LinkedList | Yes | - | - |  | - | 0 |  | Doubly Linked List
