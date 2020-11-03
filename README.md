@@ -12,6 +12,7 @@ Hierarchy | Map
 Class | Insertion Order | Unique Elements | Sorted | Synchronized | Intial Size | Implementation
 ----- | --------------- | --------------- | ------ | ------------ | ----------- | --------------
 ArrayList | Yes | - | - | - | 0 | Dynamic Array
+LinkedList | Yes | - | - | - | 0 | Doubly Linked List
 
 ### List Iterator
 
