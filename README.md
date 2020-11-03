@@ -17,6 +17,8 @@ Class | Insertion Order | Unique Elements | Sorted | Synchronized | Intial Size 
 ----- | --------------- | --------------- | ------ | ------------ | ----------- | --------------
 ArrayList | Yes | - | - | - | 0 | Dynamic Array
 LinkedList | Yes | - | - | - | 0 | Doubly Linked List
+Vector | Yes | - | - | Yes | 10 | Dynamic Array
+Stack | Yes | - | - | Yes | 10 | Dynamic Array
 
 ### List Iterator
 
