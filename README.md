@@ -41,6 +41,10 @@ HashMap | - | Yes | - |  | - | 16 | 0.75 | inherits AbstractMap
 LinkedHashMap | Yes | Yes | - |  | - | 16 | 0.75 | 
 TreeMap | - | Yes | Yes |  | - |  |  | 
 
+### Speed
+* LinkedList faster than ArrayList faster than Vector
+* HashMap faster than Hashtable
+
 ### List Iterator
 
     public class Main {
