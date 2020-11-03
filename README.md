@@ -13,20 +13,20 @@
 
 ### Properties
 
-Class | Insertion Order | Unique Elements | Sorted | Synchronized | Intial Size | Implementation
------ | --------------- | --------------- | ------ | ------------ | ----------- | --------------
-ArrayList | Yes | - | - | - | 0 | Dynamic Array
-LinkedList | Yes | - | - | - | 0 | Doubly Linked List
-Vector | Yes | - | - | Yes | 10 | Dynamic Array
-Stack | Yes | - | - | Yes | 10 | Dynamic Array
-PriorityQueue | - | - | Yes | - | 11 | Dynamic Array
-ArrayDeque | Yes | - | - | - | 16 | Dynamic Array
-HashSet | - | Yes | - | - | 16 | 
-LinkedHashSet | Yes | Yes | - | - |  | 
-TreeSet | - | Yes | Yes | - |  | 
-HashMap | - | Yes | - | - |  | 
-LinkedHashMap | Yes | Yes | - | - |  | 
-TreeMap | - | Yes | Yes | - |  | 
+Class | Insertion Order | Unique Elements | Sorted | Synchronized | Intial Size | Load Factor | Implementation
+----- | --------------- | --------------- | ------ | ------------ | ----------- | ----------- | --------------
+ArrayList | Yes | - | - | - | 0 |  | Dynamic Array
+LinkedList | Yes | - | - | - | 0 |  | Doubly Linked List
+Vector | Yes | - | - | Yes | 10 |  | Dynamic Array
+Stack | Yes | - | - | Yes | 10 |  | Dynamic Array
+PriorityQueue | - | - | Yes | - | 11 |  | Dynamic Array
+ArrayDeque | Yes | - | - | - | 16 |  | Dynamic Array
+HashSet | - | Yes | - | - | 16 |  | 
+LinkedHashSet | Yes | Yes | - | - |  |  | 
+TreeSet | - | Yes | Yes | - |  |  | 
+HashMap | - | Yes | - | - |  |  | 
+LinkedHashMap | Yes | Yes | - | - |  |  | 
+TreeMap | - | Yes | Yes | - |  |  | 
 
 ### List Iterator
 
