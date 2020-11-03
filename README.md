@@ -1,9 +1,21 @@
 # Java Collections
-**Iterable** is an interface contains only one abstract method. [ Iterator<T> iterator() ]
+**Iterable Interface** contains only one abstract method. [ Iterator<T> iterator() ]
 
-**Collection** is an interface acts as container for other objects, with common operations add(), remove(), contains()
+**Collection Interface** acts as container for other objects, with common operations add(), remove(), contains()
 
-**List** is an interface store the inserted order of elements. (allow duplicate values)
+**List Interface** store the inserted order of elements. (allow duplicate values)
+
+**Queue Interface** orders the elements in FIFO (First In First Out).
+
+**Dequeue Interface** is a double ended queue.
+
+**Set Interface** unordered set which doesn't allow to store duplicate items, allow at most one null value.
+
+**SortedSet Interface** elements sorted in the increasing (ascending) order.
+
+**Map Interface** key and value pair, keys are unique.
+
+**SortedMap Interface**
 
 ### Hierarchy
 
