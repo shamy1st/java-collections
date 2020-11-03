@@ -1,8 +1,7 @@
 # Java Collections
+**Iterable** is an interface contains only one abstract method. [ Iterator<T> iterator() ]
 
 ### List Iterator
-
-**Iterable** is an interface contains only one abstract method. [ Iterator<T> iterator() ]
 
     public class Main {
         public static void main(String[] args) {
