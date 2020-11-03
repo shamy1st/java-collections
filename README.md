@@ -1,6 +1,10 @@
 # Java Collections
 **Iterable** is an interface contains only one abstract method. [ Iterator<T> iterator() ]
 
+**Collection** is an interface acts as container for other objects, with common operations add(), remove(), contains()
+
+**List** is an interface store the inserted order of elements. (allow duplicate values)
+
 ### List Iterator
 
     public class Main {
@@ -51,10 +55,6 @@
             }
         }
     }
-    
-**Collection** is an interface acts as container for other objects, with common operations add(), remove(), contains()
-
-**List** is an interface store the inserted order of elements. (allow duplicate values)
 
 ### Sort using Comparable Interface
 
