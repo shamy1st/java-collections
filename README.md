@@ -1,6 +1,6 @@
 # Java Collections
 
-### Generic List Iterator
+### List Iterator
 
 **Iterable** is an interface contains only one abstract method. [ Iterator<T> iterator() ]
 
