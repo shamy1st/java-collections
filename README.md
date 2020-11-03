@@ -5,9 +5,13 @@
 
 **List** is an interface store the inserted order of elements. (allow duplicate values)
 
-Hierarchy | Map
----------- | ---
+### Hierarchy
+
+--- | ---
+--- | ---
 ![](https://github.com/shamy1st/java-collections/blob/main/collection-hierarchy.png) | ![](https://github.com/shamy1st/java-collections/blob/main/map-hierarchy.png)
+
+### Properties
 
 Class | Insertion Order | Unique Elements | Sorted | Synchronized | Intial Size | Implementation
 ----- | --------------- | --------------- | ------ | ------------ | ----------- | --------------
