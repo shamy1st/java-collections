@@ -5,7 +5,6 @@
 
 **List** is an interface store the inserted order of elements. (allow duplicate values)
 
-Collection Hierarchy | Map Hierarchy
 --- | ---
 ![](https://github.com/shamy1st/java-collections/blob/main/collection-hierarchy.png) | ![](https://github.com/shamy1st/java-collections/blob/main/map-hierarchy.png)
 
