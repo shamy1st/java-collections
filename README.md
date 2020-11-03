@@ -36,6 +36,7 @@ ArrayDeque | Yes | - | - |  | - | 16 |  | Dynamic Array
 HashSet | - | Yes | - |  | - | 16 | 0.75 | 
 LinkedHashSet | Yes | Yes | - |  | - |  |  | 
 TreeSet | - | Yes | Yes |  | - |  |  | 
+Hashtable | - | Yes | - |  | Yes | 11 | 0.75 | 
 HashMap | - | Yes | - |  | - | 16 | 0.75 | 
 LinkedHashMap | Yes | Yes | - |  | - | 16 | 0.75 | 
 TreeMap | - | Yes | Yes |  | - |  |  | 
