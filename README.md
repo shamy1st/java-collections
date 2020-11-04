@@ -197,13 +197,32 @@ EnumMap               | O(1)     |   O(1)      | O(1)     | Array
     -------- | -- | -- | -- | --- | --- | --- | --- | --- | --- | ---- | ---
     capacity | 16 | 34 | 70 | 105 | 157 | 235 | 352 | 528 | 792 | 1188 | ...
     
+### Hashtable
+* maps keys to values.
+* Hashtable is an array of a list.
+* each list is known as a bucket.
+* the position of the bucket is identified by calling the hashcode() method.
+* a Hashtable contains values based on the key.
+* Hashtable class doesn't allow null key or value.
+
+            public class Hashtable<K,V> extends Dictionary<K,V>
+                implements Map<K,V>, Cloneable, java.io.Serializable 
+            {
+                private transient Entry<?,?>[] table;
+                ...
+            }
+            
+* **capacity** = (oldCapacity << 1) + 1,        **load-factor** = 0.75
+
+    size     | 0  | 9  | 18 | 36 | 72  | 144 | 288 | 576  | ...
+    -------- | -- | -- | -- | -- | --- | --- | --- | ---- | ---
+    capacity | 11 | 23 | 47 | 95 | 191 | 383 | 767 | 1535 | ...
+
 ### HashSet
 
 ### LinkedHashSet
 
 ### TreeSet
-
-### Hashtable
 
 ### HashMap
 
