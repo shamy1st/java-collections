@@ -25,8 +25,8 @@
 
 ### Properties
 
-Class | Insert Order | Unique Items | Sorted | Random Access | Thread Safe | Intial Size | Load Factor | Impl.
------ | ------------ | ------------ | ------ | ------------- | ----------- | ----------- | ----------- | -----
+class | order | unique | sort | random | thread | intial | load | impl.
+----- | ----- | ------ | ---- | ------ | ------ | ------ | ---- | -----
 ArrayList | Yes | - | - | Yes | - | 0 |  | Dynamic Array
 LinkedList | Yes | - | - |  | - | 0 |  | Doubly Linked List
 Vector | Yes | - | - |  | Yes | 10 |  | Dynamic Array
@@ -46,6 +46,7 @@ TreeMap | - | Yes | Yes |  | - |  |  |
 * HashMap faster than Hashtable
 
 ### ArrayList
+* manipulation is little bit slower than the LinkedList because a lot of shifting needs to occur if any element is removed from the array list.
 
 ### LinkedList
 
