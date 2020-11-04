@@ -43,17 +43,18 @@ TreeMap | - | Yes | Yes |  | - |  |
 
 ### Complexity
 
-list | add() | get() | remove() | contains() | Data Structure
------ | ----- | ----- | -------- | --------- | --------------
-ArrayList | O(1) | O(1) | O(n) | O(n) | dynamic array
-LinkedList | O(1) | O(n) | O(1) | O(n) | doubly linked list
-Vector | - | - | - |  | dynamic array
-Stack | - | - | - |  | dynamic array
+List                 | Add  | Remove | Get  | Contains | Next | Data Structure
+---------------------|------|--------|------|----------|------|---------------
+ArrayList            | O(1) |  O(n)  | O(1) |   O(n)   | O(1) | Dynamic Array
+LinkedList           | O(1) |  O(1)  | O(n) |   O(n)   | O(1) | Linked List
+Vector               | O(-) |  O(-)  | O(-) |   O(-)   | O(-) | Dynamic Array
+Stack                | O(-) |  O(-)  | O(-) |   O(-)   | O(-) | Dynamic Array
 
-queue | add() | get() | remove() | contains()
------ | ----- | ----- | -------- | ----------
-PriorityQueue | - | - | - |  
-ArrayDeque | - | - | - |  
+Queue                   |  Offer   | Peak |   Poll   | Remove | Size | Data Structure
+------------------------|----------|------|----------|--------|------|---------------
+PriorityQueue           | O(log n) | O(1) | O(log n) |  O(n)  | O(1) | Priority Heap
+LinkedList              | O(1)     | O(1) | O(1)     |  O(1)  | O(1) | Dynamic Array
+ArrayDequeue            | O(1)     | O(1) | O(1)     |  O(n)  | O(1) | Linked List
 
 set | add() | get() | remove() | contains()
 ----- | ----- | ----- | -------- | ----------
@@ -147,7 +148,7 @@ TreeMap | - | - | - |
     capacity | 10 | 20 | 40 | 80 | 160 | 320 | 640 | 1280 | ...
 
 ### Stack
-* based on First-In-Last-Out (FILO) or Last-In-First-Out (LIFO)
+* based on FILO (First In Last Out) or LIFO (Last In First Out).
 
             class Stack<E> extends Vector<E> {
                 ...
@@ -161,6 +162,7 @@ TreeMap | - | - | - |
 
 
 ### PriorityQueue
+* based on FIFO (First In First Out).
 
 ### ArrayDeque
 
