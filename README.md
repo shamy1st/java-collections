@@ -46,7 +46,7 @@ TreeMap | - | Yes | Yes |  | - |  |  |
 class | add() | get() | remove() | contains()
 ----- | ----- | ----- | -------- | ----------
 ArrayList | O(1) | O(1) | O(n) | O(n)
-LinkedList | - | - | - | 
+LinkedList | O(1) | O(n) | O(1) | O(n)
 Vector | - | - | - |  
 Stack | - | - | - |  
 PriorityQueue | - | - | - |  
