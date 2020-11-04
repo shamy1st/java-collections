@@ -27,7 +27,7 @@
 
 class | ordr | uniq | sort | rand | thrd | init | load | impl.
 ----- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | -----
-ArrayList | Yes | - | - | Yes | - | 0 |  | dynamic array
+ArrayList | Yes | - | - | Yes | - | 10 | 0.75 | dynamic array
 LinkedList | Yes | - | - |  | - | 0 |  | doubly linked list
 Vector | Yes | - | - |  | Yes | 10 |  | dynamic array
 Stack | Yes | - | - |  | Yes | 10 |  | dynamic array
@@ -49,6 +49,9 @@ TreeMap | - | Yes | Yes |  | - |  |  |
 --- | ---
 --- | ---
 manipulation is little bit slower than LinkedList <br> because a lot of shifting needs to occur if any element is removed from the array list. | ![](https://github.com/shamy1st/java-collections/blob/main/images/arraylist.png)
+
+**capacity** = floor(old-capacity * 3/2)
+10 | 15 | 22 | 33 | 49 | 73 | 109 | 163 | 244 | 366 | 549 | 823 | 1234
 
 ### LinkedList
 --- | ---
