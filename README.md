@@ -43,17 +43,26 @@ TreeMap | - | Yes | Yes |  | - |  |  |
 
 ### Complexity
 
-class | add() | get() | remove() | contains()
+list | add() | get() | remove() | contains()
 ----- | ----- | ----- | -------- | ----------
 ArrayList | O(1) | O(1) | O(n) | O(n)
 LinkedList | O(1) | O(n) | O(1) | O(n)
 Vector | - | - | - |  
 Stack | - | - | - |  
+
+queue | add() | get() | remove() | contains()
+----- | ----- | ----- | -------- | ----------
 PriorityQueue | - | - | - |  
 ArrayDeque | - | - | - |  
+
+set | add() | get() | remove() | contains()
+----- | ----- | ----- | -------- | ----------
 HashSet | - | - | - |  
 LinkedHashSet | - | - | - |  
 TreeSet | - | - | - |  
+
+map | add() | get() | remove() | contains()
+----- | ----- | ----- | -------- | ----------
 Hashtable | - | - | - |  
 HashMap | - | - | - |  | - 
 LinkedHashMap | - | - | - |  
@@ -274,4 +283,6 @@ TreeMap | - | - | - |
 * https://www.javatpoint.com/java-arraylist
 * https://stackoverflow.com/questions/39871216/load-factor-of-arraylist-and-vector/44042394
 * https://www.javatpoint.com/java-linkedlist
+* https://www.baeldung.com/java-collections-complexity
+
 
