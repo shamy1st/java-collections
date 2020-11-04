@@ -87,14 +87,13 @@ TreeMap | - | Yes | Yes |  | - |  |  |
 
 ### LinkedList
 * It provides a linked-list data structure.
+* uses a doubly linked list to store the elements.
 
             public class LinkedList<E> extends AbstractSequentialList<E>
                 implements List<E>, Deque<E>, Cloneable, java.io.Serializable
             {
                 ...
             }
-            
-* uses a doubly linked list to store the elements.
 
 ### Vector
 
