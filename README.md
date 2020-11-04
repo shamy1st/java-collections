@@ -44,9 +44,9 @@ TreeMap       | -     | Yes    | Yes    |        | -      |      |
 ### Complexity
 
 List                 | Add  | Remove | Get  | Contains | Next | Data Structure
----------------------|------|--------|------|----------|------|---------------
+---------------------|------|--------|------|----------|------|-------------------
 ArrayList            | O(1) |  O(n)  | O(1) |   O(n)   | O(1) | Dynamic Array
-LinkedList           | O(1) |  O(1)  | O(n) |   O(n)   | O(1) | Linked List
+LinkedList           | O(1) |  O(1)  | O(n) |   O(n)   | O(1) | Doubly Linked List
 Vector               |      |        |      |          |      | Dynamic Array
 Stack                |      |        |      |          |      | Dynamic Array
 
