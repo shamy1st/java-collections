@@ -27,10 +27,10 @@
 
 class | ordr | uniq | sort | rand | thrd | init | load | impl.
 ----- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | -----
-ArrayList | Yes | - | - | Yes | - | 0 |  | dynamic array
-LinkedList | Yes | - | - |  | - | 0 |  | doubly linked list
-Vector | Yes | - | - |  | Yes | 10 |  | dynamic array
-Stack | Yes | - | - |  | Yes | 10 |  | dynamic array
+ArrayList | Yes | - | - | Yes | - | 0 | - | dynamic array
+LinkedList | Yes | - | - |  | - | 0 | - | doubly linked list
+Vector | Yes | - | - |  | Yes | 10 | - | dynamic array
+Stack | Yes | - | - |  | Yes | 10 | - | dynamic array
 PriorityQueue | - | - | Yes |  | - | 11 |  | dynamic array
 ArrayDeque | Yes | - | - |  | - | 16 |  | dynamic array
 HashSet | - | Yes | - |  | - | 16 | 0.75 | 
