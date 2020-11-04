@@ -46,9 +46,14 @@ TreeMap | - | Yes | Yes |  | - |  |  |
 * HashMap faster than Hashtable
 
 ### ArrayList
-* manipulation is little bit slower than the LinkedList because a lot of shifting needs to occur if any element is removed from the array list.
+--- | ---
+--- | ---
+* manipulation is little bit slower than the LinkedList because a lot of shifting needs to occur if any element is removed from the array list. | ![](https://github.com/shamy1st/java-collections/blob/main/arraylist.png)
 
 ### LinkedList
+--- | ---
+--- | ---
+--- | ![](https://github.com/shamy1st/java-collections/blob/main/linkedlist.png)
 
 ### Vector
 
