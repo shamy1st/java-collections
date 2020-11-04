@@ -147,6 +147,18 @@ TreeMap | - | - | - |
     capacity | 10 | 20 | 40 | 80 | 160 | 320 | 640 | 1280 | ...
 
 ### Stack
+* based on First-In-Last-Out (FILO) or Last-In-First-Out (LIFO)
+
+            class Stack<E> extends Vector<E> {
+                ...
+            }
+
+* **capacity** = 2 * oldCapacity (same as Vector)
+
+    size     | 0  | 11 | 21 | 41 | 81  | 161 | 321 | 641  | ...
+    -------- | -- | -- | -- | -- | --- | --- | --- | ---- | ---
+    capacity | 10 | 20 | 40 | 80 | 160 | 320 | 640 | 1280 | ...
+
 
 ### PriorityQueue
 
@@ -299,4 +311,5 @@ TreeMap | - | - | - |
 * https://www.javatpoint.com/java-linkedlist
 * https://www.baeldung.com/java-collections-complexity
 * https://gist.github.com/psayre23/c30a821239f4818b0709
+* https://www.javatpoint.com/java-vector
 
