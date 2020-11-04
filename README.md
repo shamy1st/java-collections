@@ -36,7 +36,7 @@ ArrayDeque    | Yes   | -      | -      | -      | -      | 16   | -           |
 Hashtable     | -     | Yes    | -      | -      | Yes    | 11   | 0.75        |
 HashSet       | -     | Yes    | -      | -      | -      | 16   | 0.75        |
 LinkedHashSet | Yes   | Yes    | -      | -      | -      | 16   | 0.75        |
-TreeSet       | -     | Yes    | Yes    |        | -      |      |             |
+TreeSet       | -     | Yes    |Yes  ASC| ?      | -      | 0    | -           |
 HashMap       | -     | Yes    | -      |        | -      | 16   | 0.75        |
 LinkedHashMap | Yes   | Yes    | -      |        | -      | 16   | 0.75        |
 TreeMap       | -     | Yes    | Yes    |        | -      |      |             |
@@ -255,6 +255,17 @@ EnumMap               | O(1)     |   O(1)      | O(1)     | Array
     capacity | 16 | 32 | 48 | 64 | 80 | 96 | 112 | 128 | 144 | 160 | ...
 
 ### TreeSet
+* uses a tree for storage.
+* access and retrieval times are quiet fast.
+* doesn't allow null element.
+* non synchronized.
+* maintains ascending order.
+
+        public class TreeSet<E> extends AbstractSet<E>
+            implements NavigableSet<E>, Cloneable, java.io.Serializable
+        {
+            ...
+        }
 
 ### HashMap
 
@@ -402,4 +413,6 @@ EnumMap               | O(1)     |   O(1)      | O(1)     | Array
 * https://www.baeldung.com/java-array-deque
 * https://www.javatpoint.com/java-hashtable
 * https://www.javatpoint.com/java-hashset
+* https://www.javatpoint.com/java-linkedhashset
 * 
+
