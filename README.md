@@ -86,7 +86,14 @@ TreeMap | - | Yes | Yes |  | - |  |  |
 * manipulation is little bit slower than LinkedList because a lot of shifting needs to occur if any element is removed from the array list.
 
 ### LinkedList
+* It provides a linked-list data structure.
 
+            public class LinkedList<E> extends AbstractSequentialList<E>
+                implements List<E>, Deque<E>, Cloneable, java.io.Serializable
+            {
+                ...
+            }
+            
 * **capacity** = 
 
 ### Vector
