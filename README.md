@@ -138,7 +138,7 @@ EnumMap               | O(1)     |   O(1)      | O(1)     | Array
                 ...
             }
 
-* **capacity** = 2 * oldCapacity
+* **capacity** = 2 * oldCapacity (if capacityIncrement <= 0)
 
     size     | 0  | 11 | 21 | 41 | 81  | 161 | 321 | 641  | ...
     -------- | -- | -- | -- | -- | --- | --- | --- | ---- | ---
@@ -151,7 +151,7 @@ EnumMap               | O(1)     |   O(1)      | O(1)     | Array
                 ...
             }
 
-* **capacity** = 2 * oldCapacity (same as Vector class)
+* **capacity** = 2 * oldCapacity (if capacityIncrement <= 0)
 
     size     | 0  | 11 | 21 | 41 | 81  | 161 | 321 | 641  | ...
     -------- | -- | -- | -- | -- | --- | --- | --- | ---- | ---
