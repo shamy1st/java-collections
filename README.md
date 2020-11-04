@@ -47,6 +47,13 @@ TreeMap | - | Yes | Yes |  | - |  |  |
 
 ### ArrayList
 * like an array, but there is no size limit.
+
+        public class ArrayList<E> extends AbstractList<E>
+                implements List<E>, RandomAccess, Cloneable, java.io.Serializable
+        {
+            ...
+        }
+
 * manipulation is little bit slower than LinkedList because a lot of shifting needs to occur if any element is removed from the array list.
 * **capacity** = floor[ old-capacity * 3 / 2 ]
 
