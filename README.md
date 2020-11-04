@@ -33,8 +33,8 @@ Vector        | Yes   | -      | -      | Yes    | Yes    | 10   | -           |
 Stack         | Yes   | -      | -      | Yes    | Yes    | 10   | -           |
 PriorityQueue | -     | -      | Yes    | -      | -      | 11   | -           |
 ArrayDeque    | Yes   | -      | -      | -      | -      | 16   | -           |
-Hashtable     | -     | Yes    | -      |        | Yes    | 11   | 0.75        |
-HashSet       | -     | Yes    | -      |        | -      | 16   | 0.75        |
+Hashtable     | -     | Yes    | -      | -      | Yes    | 11   | 0.75        |
+HashSet       | -     | Yes    | -      | -      | -      | 16   | 0.75        |
 LinkedHashSet | Yes   | Yes    | -      |        | -      |      |             |
 TreeSet       | -     | Yes    | Yes    |        | -      |      |             |
 HashMap       | -     | Yes    | -      |        | -      | 16   | 0.75        |
@@ -221,6 +221,7 @@ EnumMap               | O(1)     |   O(1)      | O(1)     | Array
 ### HashSet
 * uses a hash table for storage.
 * HashSet allows null value.
+* HashSet class is non synchronized.
 
         public class HashSet<E> extends AbstractSet<E>
             implements Set<E>, Cloneable, java.io.Serializable 
