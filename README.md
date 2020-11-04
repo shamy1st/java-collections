@@ -39,7 +39,7 @@ LinkedHashSet | Yes   | Yes    | -      | -      | -      | 16   | 0.75        |
 TreeSet       | -     | Yes    |Yes  ASC| ?      | -      | 0    | -           |
 HashMap       | -     | Yes    | -      | -      | -      | 16   | 0.75        |
 LinkedHashMap | Yes   | Yes    | -      | -      | -      | 16   | 0.75        |
-TreeMap       | -     | Yes    | Yes    | ?      | -      | 0    | -           |
+TreeMap       | -     | Yes    |Yes  ASC| ?      | -      | 0    | -           |
 
 ### Complexity
 
