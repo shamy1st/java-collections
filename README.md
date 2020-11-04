@@ -76,6 +76,7 @@ TreeMap | - | - | - |
 * like an array, but no size limit.
 * slower than LinkedList because a lot of shifting while remove.
 * better than LinkedList for storing and accessing data.
+* increments 50% of current array if the number of elements exceeds from its capacity.
 
         public class ArrayList<E> extends AbstractList<E>
                 implements List<E>, RandomAccess, Cloneable, java.io.Serializable
@@ -130,6 +131,8 @@ TreeMap | - | - | - |
 
 ### Vector
 * same as ArrayList but thread-safe
+* increments 100% of current array if the number of elements exceeds from its capacity.
+* slow because it is synchronized.
 
             public class Vector<E> extends AbstractList<E>
                 implements List<E>, RandomAccess, Cloneable, java.io.Serializable
@@ -137,7 +140,7 @@ TreeMap | - | - | - |
                 ...
             }
 
-* **capacity** = oldCapacity + ((capacityIncrement > 0) ? capacityIncrement : oldCapacity)
+* **capacity** = 2 * oldCapacity
 
     size     | 0  | 11 | 21 | 41 | 81  | 161 | 321 | 641  | ...
     -------- | -- | -- | -- | -- | --- | --- | --- | ---- | ---
