@@ -35,7 +35,7 @@ PriorityQueue | -     | -      | Yes    | -      | -      | 11   | -           |
 ArrayDeque    | Yes   | -      | -      | -      | -      | 16   | -           |
 Hashtable     | -     | Yes    | -      | -      | Yes    | 11   | 0.75        |
 HashSet       | -     | Yes    | -      | -      | -      | 16   | 0.75        |
-LinkedHashSet | Yes   | Yes    | -      |        | -      |      |             |
+LinkedHashSet | Yes   | Yes    | -      | -      | -      | 16   | 0.75        |
 TreeSet       | -     | Yes    | Yes    |        | -      |      |             |
 HashMap       | -     | Yes    | -      |        | -      | 16   | 0.75        |
 LinkedHashMap | Yes   | Yes    | -      |        | -      | 16   | 0.75        |
@@ -237,6 +237,22 @@ EnumMap               | O(1)     |   O(1)      | O(1)     | Array
     capacity | 16 | 32 | 48 | 64 | 80 | 96 | 112 | 128 | 144 | 160 | ...
 
 ### LinkedHashSet
+* LinkedHashSet class is a Hashtable and Linked list implementation of the set interface.
+* allows null elements.
+* LinkedHashSet class is non synchronized.
+* maintains insertion order.
+
+        public class LinkedHashSet<E> extends HashSet<E>
+            implements Set<E>, Cloneable, java.io.Serializable 
+        {
+            ...
+        }
+        
+* **capacity** = (oldCapacity << 1), **load-factor** = 0.75
+
+    size     | 12 | 24 | 36 | 48 | 60 | 72 | 84  | 96  | 108 | 120 | ...
+    -------- | -- | -- | -- | -- | -- | -- | --- | --- | --- | --- | ---
+    capacity | 16 | 32 | 48 | 64 | 80 | 96 | 112 | 128 | 144 | 160 | ...
 
 ### TreeSet
 
@@ -385,4 +401,5 @@ EnumMap               | O(1)     |   O(1)      | O(1)     | Array
 * https://www.javatpoint.com/java-deque-arraydeque
 * https://www.baeldung.com/java-array-deque
 * https://www.javatpoint.com/java-hashtable
+* https://www.javatpoint.com/java-hashset
 * 
