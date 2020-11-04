@@ -129,8 +129,19 @@ TreeMap | - | - | - |
             }
 
 ### Vector
+* same as ArrayList but thread-safe
+
+            public class Vector<E> extends AbstractList<E>
+                implements List<E>, RandomAccess, Cloneable, java.io.Serializable
+            {
+                ...
+            }
 
 * **capacity** = oldCapacity + ((capacityIncrement > 0) ? capacityIncrement : oldCapacity)
+
+    size     | 0  | 11 | 21 | 41 | 81  | 161 | 321 | 641  | ...
+    -------- | -- | -- | -- | -- | --- | --- | --- | ---- | ---
+    capacity | 10 | 20 | 40 | 80 | 160 | 320 | 640 | 1280 | ...
 
 ### Stack
 
