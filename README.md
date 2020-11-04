@@ -53,8 +53,8 @@ Stack                |      |        |      |          |      | Dynamic Array
 Queue                   |  Offer   | Peak |   Poll   | Remove | Size | Data Structure
 ------------------------|----------|------|----------|--------|------|---------------------
 PriorityQueue           | O(log n) | O(1) | O(log n) |  O(n)  | O(1) | Balanced Binary Heap
-LinkedList              | O(1)     | O(1) | O(1)     |  O(1)  | O(1) | Array
-ArrayDequeue            | O(1)     | O(1) | O(1)     |  O(n)  | O(1) | Linked List
+LinkedList              | O(1)     | O(1) | O(1)     |  O(1)  | O(1) | Doubly Linked List
+ArrayDeque              | O(1)     | O(1) | O(1)     |  O(n)  | O(1) | Dynamic Array
 
 Set                   |    Add   |  Remove  | Contains |   Next   | Size | Data Structure
 ----------------------|----------|----------|----------|----------|------|-------------------------
@@ -171,14 +171,32 @@ EnumMap               | O(1)     |   O(1)      | O(1)     | Array
                 ...
             }
 
-* **capacity** = oldCapacity + [ (oldCapacity < 64) ? (oldCapacity + 2) : (oldCapacity >> 1) ];
+* **capacity** = oldCapacity + [ (oldCapacity < 64) ? (oldCapacity + 2) : (oldCapacity >> 1) ]
 
     size     | 0  | 12 | 25 | 51  | 103 | 154 | 230 | 344 | 515 | 772  | ...
     -------- | -- | -- | -- | --- | --- | --- | --- | --- | --- | ---- | ---
     capacity | 11 | 24 | 50 | 102 | 153 | 229 | 343 | 514 | 771 | 1156 | ...
 
 ### ArrayDeque
+* Deque is an acronym for "double ended queue".
+* supports element insertion and removal at both ends.
+* Null elements are not allowed.
+* no capacity restrictions.
+* faster than LinkedList and Stack.
 
+            public class ArrayDeque<E> extends AbstractCollection<E>
+                    implements Deque<E>, Cloneable, Serializable
+            {
+                transient Object[] elements;
+                ...
+            }
+            
+* **capacity** = oldCapacity + [ (oldCapacity < 64) ? (oldCapacity + 2) : (oldCapacity >> 1) ]
+
+    size     | 0  | 16 | 34 | 70  | 105 | 157 | 235 | 352 | 528 | 792  | ...
+    -------- | -- | -- | -- | --- | --- | --- | --- | --- | --- | ---- | ---
+    capacity | 16 | 34 | 70 | 105 | 157 | 235 | 352 | 528 | 792 | 1188 | ...
+    
 ### HashSet
 
 ### LinkedHashSet
