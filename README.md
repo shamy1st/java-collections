@@ -160,6 +160,12 @@ EnumMap               | O(1)     |   O(1)      | O(1)     | Array
 ### PriorityQueue
 * based on FIFO (First In First Out).
 
+            public class PriorityQueue<E> extends AbstractQueue<E>
+                implements java.io.Serializable 
+            {
+                ...
+            }
+
 * **capacity** = 
 
     size     | 0  | 12 | 25 | 51  | 103 | 154 | 230 | 344 | 515 | 772  | ...
