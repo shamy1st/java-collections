@@ -70,10 +70,6 @@ LinkedHashMap         | O(1)     |   O(1)      | O(1)     | Hash Table + Linked 
 TreeMap               | O(log n) |   O(log n)  | O(log n) | Red-black tree
 EnumMap               | O(1)     |   O(1)      | O(1)     | Array
 
-### Speed
-* LinkedList faster than ArrayList faster than Vector
-* HashMap faster than Hashtable
-
 ### ArrayList
 * like an array, but no size limit.
 * slower than LinkedList because a lot of shifting while remove.
@@ -161,9 +157,14 @@ EnumMap               | O(1)     |   O(1)      | O(1)     | Array
     -------- | -- | -- | -- | -- | --- | --- | --- | ---- | ---
     capacity | 10 | 20 | 40 | 80 | 160 | 320 | 640 | 1280 | ...
 
-
 ### PriorityQueue
 * based on FIFO (First In First Out).
+
+* **capacity** = 
+
+    size     | 0  | 12 | 25 | 51  | 103 | 154 | 230 | 344 | 515 | 772  | ...
+    -------- | -- | -- | -- | --- | --- | --- | --- | --- | --- | ---- | ---
+    capacity | 11 | 24 | 50 | 102 | 153 | 229 | 343 | 514 | 771 | 1156 | ...
 
 ### ArrayDeque
 
