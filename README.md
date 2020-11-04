@@ -41,6 +41,24 @@ HashMap | - | Yes | - |  | - | 16 | 0.75 | inherits AbstractMap
 LinkedHashMap | Yes | Yes | - |  | - | 16 | 0.75 | 
 TreeMap | - | Yes | Yes |  | - |  |  | 
 
+### Complexity
+
+class | add() | get() | remove() | contains()
+----- | ----- | ----- | -------- | ----------
+ArrayList | O(1) | O(1) | O(n) | O(n)
+LinkedList | - | - | - | 
+Vector | - | - | - |  
+Stack | - | - | - |  
+PriorityQueue | - | - | - |  
+ArrayDeque | - | - | - |  
+HashSet | - | - | - |  
+LinkedHashSet | - | - | - |  
+TreeSet | - | - | - |  
+Hashtable | - | - | - |  
+HashMap | - | - | - |  | - 
+LinkedHashMap | - | - | - |  
+TreeMap | - | - | - |  
+
 ### Speed
 * LinkedList faster than ArrayList faster than Vector
 * HashMap faster than Hashtable
