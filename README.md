@@ -25,8 +25,8 @@
 
 ### Properties
 
-class | order | unique | sort | random | thread | intial | load | impl.
------ | ----- | ------ | ---- | ------ | ------ | ------ | ---- | -----
+class | ordr | uniq | sort | rand | thrd | init | load | impl.
+----- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | -----
 ArrayList | Yes | - | - | Yes | - | 0 |  | dynamic array
 LinkedList | Yes | - | - |  | - | 0 |  | doubly linked list
 Vector | Yes | - | - |  | Yes | 10 |  | dynamic array
