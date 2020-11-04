@@ -29,8 +29,8 @@ class | order | unique | sorted | random | thread | init | load factor
 ----- | ----- | ------ | ------ | ------ | ------ | ---- | -----------
 ArrayList | Yes | - | - | Yes | - | 0 | -
 LinkedList | Yes | - | - | - | - | 0 | -
-Vector | Yes | - | - |  | Yes | 10 | -
-Stack | Yes | - | - |  | Yes | 10 | -
+Vector | Yes | - | - | Yes | Yes | 10 | -
+Stack | Yes | - | - | Yes | Yes | 10 | -
 PriorityQueue | - | - | Yes |  | - | 11 |  
 ArrayDeque | Yes | - | - |  | - | 16 | 
 HashSet | - | Yes | - |  | - | 16 | 0.75
@@ -153,7 +153,7 @@ TreeMap | - | - | - |
                 ...
             }
 
-* **capacity** = 2 * oldCapacity (same as Vector)
+* **capacity** = 2 * oldCapacity (same as Vector class)
 
     size     | 0  | 11 | 21 | 41 | 81  | 161 | 321 | 641  | ...
     -------- | -- | -- | -- | -- | --- | --- | --- | ---- | ---
