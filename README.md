@@ -25,8 +25,8 @@
 
 ### Properties
 
-class | ordr | uniq | sort | rand | thrd | init | load
------ | ---- | ---- | ---- | ---- | ---- | ---- | ----
+class | order | unique | sorted | random | thread | init | load factor
+----- | ----- | ------ | ------ | ------ | ------ | ---- | -----------
 ArrayList | Yes | - | - | Yes | - | 0 | -
 LinkedList | Yes | - | - | - | - | 0 | -
 Vector | Yes | - | - |  | Yes | 10 | -
