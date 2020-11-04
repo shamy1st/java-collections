@@ -347,3 +347,6 @@ EnumMap               | O(1)     |   O(1)      | O(1)     | Array
 * https://www.javatpoint.com/java-vector
 * https://www.javatpoint.com/java-stack
 * https://www.javatpoint.com/java-priorityqueue
+* https://www.javatpoint.com/java-deque-arraydeque
+* https://www.baeldung.com/java-array-deque
+* 
