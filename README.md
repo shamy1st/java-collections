@@ -25,30 +25,30 @@
 
 ### Properties
 
-class | ordr | uniq | sort | rand | thrd | init | load | impl.
------ | ---- | ---- | ---- | ---- | ---- | ---- | ---- | -----
-ArrayList | Yes | - | - | Yes | - | 0 | - | dynamic array
-LinkedList | Yes | - | - | - | - | 0 | - | doubly linked list
-Vector | Yes | - | - |  | Yes | 10 | - | dynamic array
-Stack | Yes | - | - |  | Yes | 10 | - | dynamic array
-PriorityQueue | - | - | Yes |  | - | 11 |  | dynamic array
-ArrayDeque | Yes | - | - |  | - | 16 |  | dynamic array
-HashSet | - | Yes | - |  | - | 16 | 0.75 | 
-LinkedHashSet | Yes | Yes | - |  | - |  |  | 
-TreeSet | - | Yes | Yes |  | - |  |  | 
-Hashtable | - | Yes | - |  | Yes | 11 | 0.75 | inherits Dictionary
-HashMap | - | Yes | - |  | - | 16 | 0.75 | inherits AbstractMap
-LinkedHashMap | Yes | Yes | - |  | - | 16 | 0.75 | 
-TreeMap | - | Yes | Yes |  | - |  |  | 
+class | ordr | uniq | sort | rand | thrd | init | load
+----- | ---- | ---- | ---- | ---- | ---- | ---- | ----
+ArrayList | Yes | - | - | Yes | - | 0 | -
+LinkedList | Yes | - | - | - | - | 0 | -
+Vector | Yes | - | - |  | Yes | 10 | -
+Stack | Yes | - | - |  | Yes | 10 | -
+PriorityQueue | - | - | Yes |  | - | 11 |  
+ArrayDeque | Yes | - | - |  | - | 16 | 
+HashSet | - | Yes | - |  | - | 16 | 0.75
+LinkedHashSet | Yes | Yes | - |  | - |  | 
+TreeSet | - | Yes | Yes |  | - |  | 
+Hashtable | - | Yes | - |  | Yes | 11 | 0.75
+HashMap | - | Yes | - |  | - | 16 | 0.75
+LinkedHashMap | Yes | Yes | - |  | - | 16 | 0.75
+TreeMap | - | Yes | Yes |  | - |  | 
 
 ### Complexity
 
-list | add() | get() | remove() | contains()
------ | ----- | ----- | -------- | ----------
-ArrayList | O(1) | O(1) | O(n) | O(n)
-LinkedList | O(1) | O(n) | O(1) | O(n)
-Vector | - | - | - |  
-Stack | - | - | - |  
+list | add() | get() | remove() | contains() | Data Structure
+----- | ----- | ----- | -------- | --------- | --------------
+ArrayList | O(1) | O(1) | O(n) | O(n) | dynamic array
+LinkedList | O(1) | O(n) | O(1) | O(n) | doubly linked list
+Vector | - | - | - |  | dynamic array
+Stack | - | - | - |  | dynamic array
 
 queue | add() | get() | remove() | contains()
 ----- | ----- | ----- | -------- | ----------
