@@ -47,6 +47,8 @@ TreeMap | - | Yes | Yes |  | - |  |  |
 
 ### ArrayList
 * like an array, but no size limit.
+* slower than LinkedList because a lot of shifting while remove.
+* better than LinkedList for storing and accessing data.
 
         public class ArrayList<E> extends AbstractList<E>
                 implements List<E>, RandomAccess, Cloneable, java.io.Serializable
@@ -83,11 +85,12 @@ TreeMap | - | Yes | Yes |  | - |  |  |
             }
         }
 
-* manipulation is little bit slower than LinkedList because a lot of shifting needs to occur if any element is removed from the array list.
-
 ### LinkedList
-* It provides a linked-list data structure.
+* provides a linked-list data structure.
 * uses a doubly linked list to store the elements.
+* acts as list and queue.
+* faster than ArrayList.
+* better than ArrayList for manipulating data.
 
             public class LinkedList<E> extends AbstractSequentialList<E>
                 implements List<E>, Deque<E>, Cloneable, java.io.Serializable
