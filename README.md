@@ -250,3 +250,5 @@ TreeMap | - | Yes | Yes |  | - |  |  |
 * https://www.javatpoint.com/collections-in-java
 * https://www.javatpoint.com/java-arraylist
 * https://stackoverflow.com/questions/39871216/load-factor-of-arraylist-and-vector/44042394
+* https://www.javatpoint.com/java-linkedlist
+
