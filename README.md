@@ -53,21 +53,24 @@ Stack                | O(-) |  O(-)  | O(-) |   O(-)   | O(-) | Dynamic Array
 Queue                   |  Offer   | Peak |   Poll   | Remove | Size | Data Structure
 ------------------------|----------|------|----------|--------|------|---------------
 PriorityQueue           | O(log n) | O(1) | O(log n) |  O(n)  | O(1) | Priority Heap
-LinkedList              | O(1)     | O(1) | O(1)     |  O(1)  | O(1) | Dynamic Array
+LinkedList              | O(1)     | O(1) | O(1)     |  O(1)  | O(1) | Array
 ArrayDequeue            | O(1)     | O(1) | O(1)     |  O(n)  | O(1) | Linked List
 
-set | add() | get() | remove() | contains()
------ | ----- | ----- | -------- | ----------
-HashSet | - | - | - |  
-LinkedHashSet | - | - | - |  
-TreeSet | - | - | - |  
+Set                   |    Add   |  Remove  | Contains |   Next   | Size | Data Structure
+----------------------|----------|----------|----------|----------|------|-------------------------
+HashSet               | O(1)     | O(1)     | O(1)     | O(h/n)   | O(1) | Hash Table
+LinkedHashSet         | O(1)     | O(1)     | O(1)     | O(1)     | O(1) | Hash Table + Linked List
+EnumSet               | O(1)     | O(1)     | O(1)     | O(1)     | O(1) | Bit Vector
+TreeSet               | O(log n) | O(log n) | O(log n) | O(log n) | O(1) | Red-black tree
+CopyOnWriteArraySet   | O(n)     | O(n)     | O(n)     | O(1)     | O(1) | Array
+ConcurrentSkipListSet | O(log n) | O(log n) | O(log n) | O(1)     | O(n) | Skip List
 
-map | add() | get() | remove() | contains()
------ | ----- | ----- | -------- | ----------
-Hashtable | - | - | - |  
-HashMap | - | - | - |  | - 
-LinkedHashMap | - | - | - |  
-TreeMap | - | - | - |  
+Map                   |   Get    | ContainsKey |   Next   | Data Structure
+----------------------|----------|-------------|----------|-------------------------
+HashMap               | O(1)     |   O(1)      | O(h / n) | Hash Table
+LinkedHashMap         | O(1)     |   O(1)      | O(1)     | Hash Table + Linked List
+EnumMap               | O(1)     |   O(1)      | O(1)     | Array
+TreeMap               | O(log n) |   O(log n)  | O(log n) | Red-black tree
 
 ### Speed
 * LinkedList faster than ArrayList faster than Vector
