@@ -27,7 +27,7 @@
 
 class | ordr | uniq | sort | rand | thrd | init | load | impl.
 ----- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | -----
-ArrayList | Yes | - | - | Yes | - | 10 | 0.75 | dynamic array
+ArrayList | Yes | - | - | Yes | - | 0 | 0.75 | dynamic array
 LinkedList | Yes | - | - |  | - | 0 |  | doubly linked list
 Vector | Yes | - | - |  | Yes | 10 |  | dynamic array
 Stack | Yes | - | - |  | Yes | 10 |  | dynamic array
@@ -54,7 +54,7 @@ TreeMap | - | Yes | Yes |  | - |  |  |
             ...
         }
 
-* **capacity** = floor[ old-capacity * 3 / 2 ]
+* **capacity** = oldCapacity + (oldCapacity >> 1)
 
     size     | 0 | 1  | 11 | 16 | 23 | 34 | 50 | 74  | 110 | 164 | 245 | 367 | 550 | ...
     -------- | - | -- | -- | -- | -- | -- | -- | --- | --- | --- | --- | --- | --- | ---
@@ -91,6 +91,8 @@ TreeMap | - | Yes | Yes |  | - |  |  |
 --- | ![](https://github.com/shamy1st/java-collections/blob/main/images/linkedlist.png)
 
 ### Vector
+
+* **capacity** = oldCapacity + ((capacityIncrement > 0) ? capacityIncrement : oldCapacity)
 
 ### Stack
 
@@ -237,3 +239,8 @@ TreeMap | - | Yes | Yes |  | - |  |  |
             return this.name;
         }
     }
+
+### Ref
+* https://www.javatpoint.com/collections-in-java
+* https://www.javatpoint.com/java-arraylist
+* https://stackoverflow.com/questions/39871216/load-factor-of-arraylist-and-vector/44042394
