@@ -31,8 +31,8 @@ ArrayList     | Yes   | -      | -      | Yes    | -      | 0    | -
 LinkedList    | Yes   | -      | -      | -      | -      | 0    | -
 Vector        | Yes   | -      | -      | Yes    | Yes    | 10   | -
 Stack         | Yes   | -      | -      | Yes    | Yes    | 10   | -
-PriorityQueue | -     | -      | Yes    |        | -      | 11   |  
-ArrayDeque    | Yes   | -      | -      |        | -      | 16   | 
+PriorityQueue | -     | -      | Yes    | -      | -      | 11   | -
+ArrayDeque    | Yes   | -      | -      | -      | -      | 16   | -
 Hashtable     | -     | Yes    | -      |        | Yes    | 11   | 0.75
 HashSet       | -     | Yes    | -      |        | -      | 16   | 0.75
 LinkedHashSet | Yes   | Yes    | -      |        | -      |      | 
