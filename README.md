@@ -171,7 +171,7 @@ EnumMap               | O(1)     |   O(1)      | O(1)     | Array
                 ...
             }
 
-* **capacity** = 2 * ( oldCapacity + 1 )
+* **capacity** = oldCapacity + [ (oldCapacity < 64) ? (oldCapacity + 2) : (oldCapacity >> 1) ];
 
     size     | 0  | 12 | 25 | 51  | 103 | 154 | 230 | 344 | 515 | 772  | ...
     -------- | -- | -- | -- | --- | --- | --- | --- | --- | --- | ---- | ---
