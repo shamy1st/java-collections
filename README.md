@@ -61,14 +61,12 @@ Set                   |    Add   |  Remove  | Contains |   Next   | Size | Data 
 HashSet               | O(1)     | O(1)     | O(1)     | O(h/n)   | O(1) | Hash Table
 LinkedHashSet         | O(1)     | O(1)     | O(1)     | O(1)     | O(1) | Hash Table + Linked List
 TreeSet               | O(log n) | O(log n) | O(log n) | O(log n) | O(1) | Red-black tree
-EnumSet               | O(1)     | O(1)     | O(1)     | O(1)     | O(1) | Bit Vector
 
 Map                   |   Get    | ContainsKey |   Next   | Data Structure
 ----------------------|----------|-------------|----------|-------------------------
 HashMap               | O(1)     |   O(1)      | O(h / n) | Hash Table
 LinkedHashMap         | O(1)     |   O(1)      | O(1)     | Hash Table + Linked List
 TreeMap               | O(log n) |   O(log n)  | O(log n) | Red-black tree
-EnumMap               | O(1)     |   O(1)      | O(1)     | Array
 
 ### ArrayList
 * like an array, but no size limit.
