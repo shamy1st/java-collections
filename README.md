@@ -61,14 +61,15 @@ TreeMap | - | Yes | Yes |  | - |  |  |
 
                 for(int i=0;i<=1000;i++) {
                     if(getCapacity(list) != capacity) {
-                        System.out.println("size: " + list.size() + ", capacity: " + getCapacity(list));
+                        System.out.println("size: " + list.size() 
+                        + ", capacity: " + getCapacity(list));
                         capacity = getCapacity(list);
                     }
                     list.add(i);
                 }
             }
 
-            private static int getCapacity(ArrayList<Integer> list) throws Exception{
+            private static int getCapacity(ArrayList<Integer> list) throws Exception {
                 Field arrayField = ArrayList.class.getDeclaredField("elementData");
                 arrayField.setAccessible(true);
                 Object[] internalArray = (Object[]) arrayField.get(list);
