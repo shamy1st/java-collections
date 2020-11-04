@@ -51,8 +51,8 @@ Vector               |      |        |      |          |      | Dynamic Array
 Stack                |      |        |      |          |      | Dynamic Array
 
 Queue                   |  Offer   | Peak |   Poll   | Remove | Size | Data Structure
-------------------------|----------|------|----------|--------|------|---------------
-PriorityQueue           | O(log n) | O(1) | O(log n) |  O(n)  | O(1) | Priority Heap
+------------------------|----------|------|----------|--------|------|---------------------
+PriorityQueue           | O(log n) | O(1) | O(log n) |  O(n)  | O(1) | Balanced Binary Heap
 LinkedList              | O(1)     | O(1) | O(1)     |  O(1)  | O(1) | Array
 ArrayDequeue            | O(1)     | O(1) | O(1)     |  O(n)  | O(1) | Linked List
 
@@ -158,11 +158,16 @@ EnumMap               | O(1)     |   O(1)      | O(1)     | Array
     capacity | 10 | 20 | 40 | 80 | 160 | 320 | 640 | 1280 | ...
 
 ### PriorityQueue
-* based on FIFO (First In First Out).
+* provides the facility of using queue, but it does not orders the elements in FIFO.
+* the elements in PriorityQueue must be of Comparable type.
+* String and Wrapper classes are Comparable by default.
+* To add user-defined objects in PriorityQueue, you need to implement **Comparable** interface.
+* order elements according to **compareTo()** method in Comparable interface.
 
             public class PriorityQueue<E> extends AbstractQueue<E>
                 implements java.io.Serializable 
             {
+                transient Object[] queue; //balanced binary heap
                 ...
             }
 
