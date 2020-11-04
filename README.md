@@ -27,12 +27,12 @@
 
 class | order | unique | sort | random | thread | intial | load | impl.
 ----- | ----- | ------ | ---- | ------ | ------ | ------ | ---- | -----
-ArrayList | Yes | - | - | Yes | - | 0 |  | Dynamic Array
-LinkedList | Yes | - | - |  | - | 0 |  | Doubly Linked List
-Vector | Yes | - | - |  | Yes | 10 |  | Dynamic Array
-Stack | Yes | - | - |  | Yes | 10 |  | Dynamic Array
-PriorityQueue | - | - | Yes |  | - | 11 |  | Dynamic Array
-ArrayDeque | Yes | - | - |  | - | 16 |  | Dynamic Array
+ArrayList | Yes | - | - | Yes | - | 0 |  | dynamic array
+LinkedList | Yes | - | - |  | - | 0 |  | doubly linked list
+Vector | Yes | - | - |  | Yes | 10 |  | dynamic array
+Stack | Yes | - | - |  | Yes | 10 |  | dynamic array
+PriorityQueue | - | - | Yes |  | - | 11 |  | dynamic array
+ArrayDeque | Yes | - | - |  | - | 16 |  | dynamic array
 HashSet | - | Yes | - |  | - | 16 | 0.75 | 
 LinkedHashSet | Yes | Yes | - |  | - |  |  | 
 TreeSet | - | Yes | Yes |  | - |  |  | 
