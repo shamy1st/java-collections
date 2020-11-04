@@ -284,5 +284,5 @@ TreeMap | - | - | - |
 * https://stackoverflow.com/questions/39871216/load-factor-of-arraylist-and-vector/44042394
 * https://www.javatpoint.com/java-linkedlist
 * https://www.baeldung.com/java-collections-complexity
-
+* https://gist.github.com/psayre23/c30a821239f4818b0709
 
