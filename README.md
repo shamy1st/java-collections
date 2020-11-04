@@ -302,6 +302,19 @@ EnumMap               | O(1)     |   O(1)      | O(1)     | Array
     capacity | 16 | 32 | 64 | 128 | 256 | 512 | 1024 | 2048 | ...
 
 ### TreeMap
+* TreeMap class is a red-black tree based implementation.
+* storing key-value pairs in sorted order.
+* cannot have a null key but can have multiple null values.
+* non synchronized.
+* maintains ascending order.
+
+        public class TreeMap<K,V> extends AbstractMap<K,V>
+            implements NavigableMap<K,V>, Cloneable, java.io.Serializable
+        {
+            private transient Entry<K,V> root;
+
+            ...
+        }
 
 ### List Iterator
 
@@ -447,4 +460,5 @@ EnumMap               | O(1)     |   O(1)      | O(1)     | Array
 * https://www.javatpoint.com/java-treeset
 * https://www.javatpoint.com/java-hashmap
 * https://www.javatpoint.com/java-linkedhashmap
+* https://www.javatpoint.com/java-treemap
 * 
