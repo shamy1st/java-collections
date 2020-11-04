@@ -21,7 +21,7 @@
 
 --- | ---
 --- | ---
-![](https://github.com/shamy1st/java-collections/blob/main/collection-hierarchy.png) | ![](https://github.com/shamy1st/java-collections/blob/main/map-hierarchy.png)
+![](https://github.com/shamy1st/java-collections/blob/main/images/collection-hierarchy.png) | ![](https://github.com/shamy1st/java-collections/blob/main/images/map-hierarchy.png)
 
 ### Properties
 
@@ -48,12 +48,12 @@ TreeMap | - | Yes | Yes |  | - |  |  |
 ### ArrayList
 --- | ---
 --- | ---
-* manipulation is little bit slower than the LinkedList because a lot of shifting needs to occur if any element is removed from the array list. | ![](https://github.com/shamy1st/java-collections/blob/main/arraylist.png)
+* manipulation is little bit slower than the LinkedList because a lot of shifting needs to occur if any element is removed from the array list. | ![](https://github.com/shamy1st/java-collections/blob/main/images/arraylist.png)
 
 ### LinkedList
 --- | ---
 --- | ---
---- | ![](https://github.com/shamy1st/java-collections/blob/main/linkedlist.png)
+--- | ![](https://github.com/shamy1st/java-collections/blob/main/images/linkedlist.png)
 
 ### Vector
 
