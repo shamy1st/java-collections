@@ -46,7 +46,7 @@ TreeMap | - | Yes | Yes |  | - |  |  |
 * HashMap faster than Hashtable
 
 ### ArrayList
-* like an array, but there is no size limit.
+* like an array, but no size limit.
 
         public class ArrayList<E> extends AbstractList<E>
                 implements List<E>, RandomAccess, Cloneable, java.io.Serializable
@@ -54,7 +54,6 @@ TreeMap | - | Yes | Yes |  | - |  |  |
             ...
         }
 
-* manipulation is little bit slower than LinkedList because a lot of shifting needs to occur if any element is removed from the array list.
 * **capacity** = floor[ old-capacity * 3 / 2 ]
 
     size     | 0 | 1  | 11 | 16 | 23 | 34 | 50 | 74  | 110 | 164 | 245 | 367 | 550 | ...
@@ -83,6 +82,8 @@ TreeMap | - | Yes | Yes |  | - |  |  |
                 return internalArray.length;
             }
         }
+
+* manipulation is little bit slower than LinkedList because a lot of shifting needs to occur if any element is removed from the array list.
 
 ### LinkedList
 --- | ---
