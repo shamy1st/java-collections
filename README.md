@@ -37,8 +37,8 @@ Hashtable     | -     | Yes    | -      | -      | Yes    | 11   | 0.75        |
 HashSet       | -     | Yes    | -      | -      | -      | 16   | 0.75        |
 LinkedHashSet | Yes   | Yes    | -      | -      | -      | 16   | 0.75        |
 TreeSet       | -     | Yes    |Yes  ASC| ?      | -      | 0    | -           |
-HashMap       | -     | Yes    | -      |        | -      | 16   | 0.75        |
-LinkedHashMap | Yes   | Yes    | -      |        | -      | 16   | 0.75        |
+HashMap       | -     | Yes    | -      | -      | -      | 16   | 0.75        |
+LinkedHashMap | Yes   | Yes    | -      | -      | -      | 16   | 0.75        |
 TreeMap       | -     | Yes    | Yes    |        | -      |      |             |
 
 ### Complexity
@@ -232,9 +232,9 @@ EnumMap               | O(1)     |   O(1)      | O(1)     | Array
         
 * **capacity** = (oldCapacity << 1), **load-factor** = 0.75
 
-    size     | 0  | 12 | 24 | 36 | 48 | 60 | 72  | 84  | 96  | 108 | ...
-    -------- | -- | -- | -- | -- | -- | -- | --- | --- | --- | --- | ---
-    capacity | 16 | 32 | 48 | 64 | 80 | 96 | 112 | 128 | 144 | 160 | ...
+    size     | 0  | 12 | 24 | 48  | 96  | 192 | 384  | 768  | ...
+    -------- | -- | -- | -- | --- | --- | --- | ---- | ---- | ---
+    capacity | 16 | 32 | 64 | 128 | 256 | 512 | 1024 | 2048 | ...
 
 ### LinkedHashSet
 * LinkedHashSet class is a Hashtable and Linked list implementation of the set interface.
@@ -250,9 +250,9 @@ EnumMap               | O(1)     |   O(1)      | O(1)     | Array
         
 * **capacity** = (oldCapacity << 1), **load-factor** = 0.75
 
-    size     | 0  | 12 | 24 | 36 | 48 | 60 | 72  | 84  | 96  | 108 | ...
-    -------- | -- | -- | -- | -- | -- | -- | --- | --- | --- | --- | ---
-    capacity | 16 | 32 | 48 | 64 | 80 | 96 | 112 | 128 | 144 | 160 | ...
+    size     | 0  | 12 | 24 | 48  | 96  | 192 | 384  | 768  | ...
+    -------- | -- | -- | -- | --- | --- | --- | ---- | ---- | ---
+    capacity | 16 | 32 | 64 | 128 | 256 | 512 | 1024 | 2048 | ...
 
 ### TreeSet
 * uses a tree for storage.
@@ -268,8 +268,38 @@ EnumMap               | O(1)     |   O(1)      | O(1)     | Array
         }
 
 ### HashMap
+* store key and value pair.
+* non synchronized.
+* allows only one null key, and multiple null values.
+
+        public class HashMap<K,V> extends AbstractMap<K,V>
+            implements Map<K,V>, Cloneable, Serializable 
+        {
+            ...
+        }
+
+* **capacity** = (oldCapacity << 1), **load-factor** = 0.75
+
+    size     | 0  | 12 | 24 | 48  | 96  | 192 | 384  | 768  | ...
+    -------- | -- | -- | -- | --- | --- | --- | ---- | ---- | ---
+    capacity | 16 | 32 | 64 | 128 | 256 | 512 | 1024 | 2048 | ...
 
 ### LinkedHashMap
+* maintains insertion order.
+* non synchronized.
+* allows only one null key, and multiple null values.
+
+        public class LinkedHashMap<K,V> extends HashMap<K,V>
+                implements Map<K,V>
+        {
+            ...
+        }
+
+* **capacity** = (oldCapacity << 1), **load-factor** = 0.75
+
+    size     | 0  | 12 | 24 | 48  | 96  | 192 | 384  | 768  | ...
+    -------- | -- | -- | -- | --- | --- | --- | ---- | ---- | ---
+    capacity | 16 | 32 | 64 | 128 | 256 | 512 | 1024 | 2048 | ...
 
 ### TreeMap
 
@@ -415,4 +445,6 @@ EnumMap               | O(1)     |   O(1)      | O(1)     | Array
 * https://www.javatpoint.com/java-hashset
 * https://www.javatpoint.com/java-linkedhashset
 * https://www.javatpoint.com/java-treeset
+* https://www.javatpoint.com/java-hashmap
+* https://www.javatpoint.com/java-linkedhashmap
 * 
