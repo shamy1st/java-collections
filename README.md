@@ -212,13 +212,28 @@ EnumMap               | O(1)     |   O(1)      | O(1)     | Array
                 ...
             }
             
-* **capacity** = (oldCapacity << 1) + 1,        **load-factor** = 0.75
+* **capacity** = (oldCapacity << 1) + 1, **load-factor** = 0.75
 
     size     | 0  | 9  | 18 | 36 | 72  | 144 | 288 | 576  | ...
     -------- | -- | -- | -- | -- | --- | --- | --- | ---- | ---
     capacity | 11 | 23 | 47 | 95 | 191 | 383 | 767 | 1535 | ...
 
 ### HashSet
+* uses a hash table for storage.
+* HashSet allows null value.
+
+        public class HashSet<E> extends AbstractSet<E>
+            implements Set<E>, Cloneable, java.io.Serializable 
+        {
+            private transient HashMap<E,Object> map;
+            ...
+        }
+        
+* **capacity** = (oldCapacity << 1), **load-factor** = 0.75
+
+    size     | 12 | 24 | 36 | 48 | 60 | 72 | 84  | 96  | 108 | 120 | ...
+    -------- | -- | -- | -- | -- | -- | -- | --- | --- | --- | --- | ---
+    capacity | 16 | 32 | 48 | 64 | 80 | 96 | 112 | 128 | 144 | 160 | ...
 
 ### LinkedHashSet
 
@@ -368,4 +383,5 @@ EnumMap               | O(1)     |   O(1)      | O(1)     | Array
 * https://www.javatpoint.com/java-priorityqueue
 * https://www.javatpoint.com/java-deque-arraydeque
 * https://www.baeldung.com/java-array-deque
+* https://www.javatpoint.com/java-hashtable
 * 
