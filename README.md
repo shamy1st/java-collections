@@ -94,7 +94,7 @@ TreeMap | - | Yes | Yes |  | - |  |  |
                 ...
             }
             
-* **capacity** = 
+* uses a doubly linked list to store the elements.
 
 ### Vector
 
