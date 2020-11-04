@@ -54,6 +54,28 @@ TreeMap | - | Yes | Yes |  | - |  |  |
     -------- | - | -- | -- | -- | -- | -- | -- | --- | --- | --- | --- | --- | --- | ---
     capacity | 0 | 10 | 15 | 22 | 33 | 49 | 73 | 109 | 163 | 244 | 366 | 549 | 823 | ...
 
+        public class Main {
+            public static void main(String[] args) throws Exception {
+                ArrayList<Integer> list = new ArrayList<>();
+                int capacity = -1;
+
+                for(int i=0;i<=1000;i++) {
+                    if(getCapacity(list) != capacity) {
+                        System.out.println("size: " + list.size() + ", capacity: " + getCapacity(list));
+                        capacity = getCapacity(list);
+                    }
+                    list.add(i);
+                }
+            }
+
+            private static int getCapacity(ArrayList<Integer> list) throws Exception{
+                Field arrayField = ArrayList.class.getDeclaredField("elementData");
+                arrayField.setAccessible(true);
+                Object[] internalArray = (Object[]) arrayField.get(list);
+                return internalArray.length;
+            }
+        }
+
 ### LinkedList
 --- | ---
 --- | ---
