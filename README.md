@@ -26,13 +26,13 @@
 ### Properties
 
 class         | order | unique | null | sorted | random | thread | Data Structure
-------------- | ----- | ------ | ---- | ------ | ------ | ------ | --------------
+--------------|-------|--------|------|--------|--------|--------|---------------
 ArrayList     | Yes   | -      | Yes  | -      | Yes    | -      | Dynamic Array
 LinkedList    | Yes   | -      | Yes  | -      | -      | -      | Doubly Linked List
 Vector        | Yes   | -      | Yes  | -      | Yes    | Yes    | Dynamic Array
 Stack         | Yes   | -      | Yes  | -      | Yes    | Yes    | Dynamic Array
-PriorityQueue | -     | -      |  ?   | Yes    | -      | -      | Balanced Binary Heap
-ArrayDeque    | Yes   | -      | Yes  | -      | -      | -      | Dynamic Array
+PriorityQueue | -     | -      |  -   | Yes    | -      | -      | Balanced Binary Heap
+ArrayDeque    | Yes   | -      |  -   | -      | -      | -      | Dynamic Array
 Hashtable     | -     | Yes    |  -   | -      | -      | Yes    | Array of Lists
 HashSet       | -     | Yes    | Yes  | -      | -      | -      | Hash Table
 LinkedHashSet | Yes   | Yes    | Yes  | -      | -      | -      | Hash Table + Linked List
@@ -43,30 +43,30 @@ TreeMap       | -     | Yes    |  -   |Yes  ASC| ?      | -      | Red-black tre
 
 ### Complexity
 
-List                 | Add  | Remove | Get  | Contains | Next |
----------------------|------|--------|------|----------|------|
-ArrayList            | O(1) |  O(n)  | O(1) |   O(n)   | O(1) |
-LinkedList           | O(1) |  O(1)  | O(n) |   O(n)   | O(1) | 
-Vector               |      |        |      |          |      |
-Stack                |      |        |      |          |      |
+List          | Add  | Remove | Get  | Contains | Next |
+--------------|------|--------|------|----------|------|
+ArrayList     | O(1) |  O(n)  | O(1) |   O(n)   | O(1) |
+LinkedList    | O(1) |  O(1)  | O(n) |   O(n)   | O(1) | 
+Vector        |      |        |      |          |      |
+Stack         |      |        |      |          |      |
 
-Queue                   |  Offer   | Peak |   Poll   | Remove | Size |
-------------------------|----------|------|----------|--------|------|
-PriorityQueue           | O(log n) | O(1) | O(log n) |  O(n)  | O(1) | 
-LinkedList              | O(1)     | O(1) | O(1)     |  O(1)  | O(1) |
-ArrayDeque              | O(1)     | O(1) | O(1)     |  O(n)  | O(1) | 
+Queue         |  Offer   | Peak |   Poll   | Remove | Size |
+--------------|----------|------|----------|--------|------|
+PriorityQueue | O(log n) | O(1) | O(log n) |  O(n)  | O(1) | 
+LinkedList    | O(1)     | O(1) | O(1)     |  O(1)  | O(1) |
+ArrayDeque    | O(1)     | O(1) | O(1)     |  O(n)  | O(1) | 
 
-Set                   |    Add   |  Remove  | Contains |   Next   | Size |
-----------------------|----------|----------|----------|----------|------|
-HashSet               | O(1)     | O(1)     | O(1)     | O(h/n)   | O(1) |
-LinkedHashSet         | O(1)     | O(1)     | O(1)     | O(1)     | O(1) |
-TreeSet               | O(log n) | O(log n) | O(log n) | O(log n) | O(1) |
+Set           |    Add   |  Remove  | Contains |   Next   | Size |
+--------------|----------|----------|----------|----------|------|
+HashSet       | O(1)     | O(1)     | O(1)     | O(h/n)   | O(1) |
+LinkedHashSet | O(1)     | O(1)     | O(1)     | O(1)     | O(1) |
+TreeSet       | O(log n) | O(log n) | O(log n) | O(log n) | O(1) |
 
-Map                   |   Get    | ContainsKey |   Next   |
-----------------------|----------|-------------|----------|
-HashMap               | O(1)     |   O(1)      | O(h/n)   |
-LinkedHashMap         | O(1)     |   O(1)      | O(1)     |
-TreeMap               | O(log n) |   O(log n)  | O(log n) |
+Map           |   Get    | ContainsKey |   Next   |
+--------------|----------|-------------|----------|
+HashMap       | O(1)     |   O(1)      | O(h/n)   |
+LinkedHashMap | O(1)     |   O(1)      | O(1)     |
+TreeMap       | O(log n) |   O(log n)  | O(log n) |
 
 ### Capacity
 
