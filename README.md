@@ -72,12 +72,12 @@ TreeMap               | O(log n) |   O(log n)  | O(log n) | Red-black tree
 
 class         | capacity
 --------------|-------------------------------------------------------------------------------
-ArrayList     | oldCapacity + (oldCapacity >> 1)
+ArrayList     | 1.5 * oldCapacity
 LinkedList    | -
 Vector        | 2 * oldCapacity
 Stack         | 2 * oldCapacity
-PriorityQueue | oldCapacity + [ (oldCapacity < 64) ? (oldCapacity + 2) : (oldCapacity / 2) ]
-ArrayDeque    | oldCapacity + [ (oldCapacity < 64) ? (oldCapacity + 2) : (oldCapacity / 2) ]
+PriorityQueue | if(oldCapacity < 64) then (2 * oldCapacity + 2) else (1.5 * oldCapacity)
+ArrayDeque    | if(oldCapacity < 64) then (2 * oldCapacity + 2) else (1.5 * oldCapacity)
 Hashtable     | 2 * oldCapacity + 1, load-factor = 0.75
 HashSet       | 2 * oldCapacity, load-factor = 0.75
 LinkedHashSet | 2 * oldCapacity, load-factor = 0.75
