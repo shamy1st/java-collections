@@ -113,7 +113,6 @@ TreeMap       | -                                                               
 * like an array, but no size limit.
 * slower than LinkedList because a lot of shifting while remove.
 * better than LinkedList for storing and accessing data.
-* increments 50% of current array if the number of elements exceeds from its capacity.
 
         public class ArrayList<E> extends AbstractList<E>
                 implements List<E>, RandomAccess, Cloneable, java.io.Serializable
@@ -145,7 +144,6 @@ TreeMap       | -                                                               
 
 ### Vector
 * same as ArrayList but thread-safe
-* increments 100% of current array if the number of elements exceeds from its capacity.
 * slow because it is synchronized.
 
             public class Vector<E> extends AbstractList<E>
@@ -196,8 +194,6 @@ TreeMap       | -                                                               
 ### ArrayDeque
 * Deque is an acronym for "double ended queue".
 * supports element insertion and removal at both ends.
-* Null elements are not allowed.
-* no capacity restrictions.
 * faster than LinkedList and Stack.
 
             public class ArrayDeque<E> extends AbstractCollection<E>
@@ -215,11 +211,8 @@ TreeMap       | -                                                               
     
 ### Hashtable
 * maps keys to values.
-* Hashtable is an array of a list.
-* each list is known as a bucket.
+* Hashtable is an array of a list, each list is known as a bucket.
 * the position of the bucket is identified by calling the hashcode() method.
-* a Hashtable contains values based on the key.
-* Hashtable class doesn't allow null key or value.
 
             public class Hashtable<K,V> extends Dictionary<K,V>
                 implements Map<K,V>, Cloneable, java.io.Serializable 
@@ -236,8 +229,6 @@ TreeMap       | -                                                               
 
 ### HashSet
 * uses a hash table for storage.
-* HashSet allows null value.
-* HashSet class is non synchronized.
 
         public class HashSet<E> extends AbstractSet<E>
             implements Set<E>, Cloneable, java.io.Serializable 
@@ -254,9 +245,6 @@ TreeMap       | -                                                               
 
 ### LinkedHashSet
 * LinkedHashSet class is a Hashtable and Linked list implementation of the set interface.
-* allows null elements.
-* LinkedHashSet class is non synchronized.
-* maintains insertion order.
 
         public class LinkedHashSet<E> extends HashSet<E>
             implements Set<E>, Cloneable, java.io.Serializable 
@@ -273,9 +261,6 @@ TreeMap       | -                                                               
 ### TreeSet
 * uses a tree for storage.
 * access and retrieval times are quiet fast.
-* doesn't allow null element.
-* non synchronized.
-* maintains ascending order.
 
         public class TreeSet<E> extends AbstractSet<E>
             implements NavigableSet<E>, Cloneable, java.io.Serializable
@@ -285,8 +270,6 @@ TreeMap       | -                                                               
 
 ### HashMap
 * store key and value pair.
-* non synchronized.
-* allows only one null key, and multiple null values.
 
         public class HashMap<K,V> extends AbstractMap<K,V>
             implements Map<K,V>, Cloneable, Serializable 
@@ -301,9 +284,7 @@ TreeMap       | -                                                               
     capacity | 16 | 32 | 64 | 128 | 256 | 512 | 1024 | 2048 | ...
 
 ### LinkedHashMap
-* maintains insertion order.
-* non synchronized.
-* allows only one null key, and multiple null values.
+* store key and value pair.
 
         public class LinkedHashMap<K,V> extends HashMap<K,V>
                 implements Map<K,V>
@@ -320,9 +301,6 @@ TreeMap       | -                                                               
 ### TreeMap
 * TreeMap class is a red-black tree based implementation.
 * storing key-value pairs in sorted order.
-* cannot have a null key but can have multiple null values.
-* non synchronized.
-* maintains ascending order.
 
         public class TreeMap<K,V> extends AbstractMap<K,V>
             implements NavigableMap<K,V>, Cloneable, java.io.Serializable
