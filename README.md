@@ -356,51 +356,49 @@ TreeMap       | -                                                               
             }
         }
 
-* **User-defined class (Comparator interface)**
-sort in specific field in object without modify it.
+* **User-defined class (Comparator interface)** sort in specific field in object without modify it.
 
-    
-    public class Main {
-        public static void main(String[] args) {
-            List<Customer> customers = new ArrayList<>();
-            customers.add(new Customer("2", "e3"));
-            customers.add(new Customer("3", "e2"));
-            customers.add(new Customer("1", "e1"));
-            Collections.sort(customers, new EmailComparator());
-            System.out.println(customers);
-        }
-    }
-
-    public class EmailComparator implements Comparator<Customer> {
-        @Override
-        public int compare(Customer o1, Customer o2) {
-            return o1.getEmail().compareTo(o2.getEmail());
-        }
-    }
-
-    public class Customer implements Comparable<Customer> {
-        private String name;
-        private String email;
-
-        public Customer(String name, String email) {
-            this.name = name;
-            this.email = email;
+        public class Main {
+            public static void main(String[] args) {
+                List<Customer> customers = new ArrayList<>();
+                customers.add(new Customer("2", "e3"));
+                customers.add(new Customer("3", "e2"));
+                customers.add(new Customer("1", "e1"));
+                Collections.sort(customers, new EmailComparator());
+                System.out.println(customers);
+            }
         }
 
-        public String getEmail() {
-            return email;
+        public class EmailComparator implements Comparator<Customer> {
+            @Override
+            public int compare(Customer o1, Customer o2) {
+                return o1.getEmail().compareTo(o2.getEmail());
+            }
         }
 
-        @Override
-        public int compareTo(Customer other) {
-            return this.name.compareTo(other.name);
-        }
+        public class Customer implements Comparable<Customer> {
+            private String name;
+            private String email;
 
-        @Override
-        public String toString() {
-            return this.name;
+            public Customer(String name, String email) {
+                this.name = name;
+                this.email = email;
+            }
+
+            public String getEmail() {
+                return email;
+            }
+
+            @Override
+            public int compareTo(Customer other) {
+                return this.name.compareTo(other.name);
+            }
+
+            @Override
+            public String toString() {
+                return this.name;
+            }
         }
-    }
 
 ### List Iterator
 
