@@ -19,8 +19,8 @@
 
 ### Hierarchy
 
---- | ---
---- | ---
+--|--
+--|--
 ![](https://github.com/shamy1st/java-collections/blob/main/images/collection-hierarchy.png) | ![](https://github.com/shamy1st/java-collections/blob/main/images/map-hierarchy.png)
 
 ### Properties
