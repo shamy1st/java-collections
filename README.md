@@ -68,6 +68,16 @@ HashMap               | O(1)     |   O(1)      | O(h / n) | Hash Table
 LinkedHashMap         | O(1)     |   O(1)      | O(1)     | Hash Table + Linked List
 TreeMap               | O(log n) |   O(log n)  | O(log n) | Red-black tree
 
+### Capacity
+
+class         | capacity
+--------------|-------------------------------------------------------------------------------
+ArrayList     | oldCapacity + (oldCapacity >> 1)
+LinkedList    | -
+Vector        | 2 * oldCapacity
+Stack         | 2 * oldCapacity
+PriorityQueue | oldCapacity + [ (oldCapacity < 64) ? (oldCapacity + 2) : (oldCapacity >> 1) ]
+
 ### ArrayList
 * like an array, but no size limit.
 * slower than LinkedList because a lot of shifting while remove.
