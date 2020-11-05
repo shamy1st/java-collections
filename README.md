@@ -25,21 +25,21 @@
 
 ### Properties
 
-class         | order | unique | sorted | random | thread | init | load factor |
-------------- | ----- | ------ | ------ | ------ | ------ | ---- | ----------- |
-ArrayList     | Yes   | -      | -      | Yes    | -      | 0    | -           |
-LinkedList    | Yes   | -      | -      | -      | -      | 0    | -           |
-Vector        | Yes   | -      | -      | Yes    | Yes    | 10   | -           |
-Stack         | Yes   | -      | -      | Yes    | Yes    | 10   | -           |
-PriorityQueue | -     | -      | Yes    | -      | -      | 11   | -           |
-ArrayDeque    | Yes   | -      | -      | -      | -      | 16   | -           |
-Hashtable     | -     | Yes    | -      | -      | Yes    | 11   | 0.75        |
-HashSet       | -     | Yes    | -      | -      | -      | 16   | 0.75        |
-LinkedHashSet | Yes   | Yes    | -      | -      | -      | 16   | 0.75        |
-TreeSet       | -     | Yes    |Yes  ASC| ?      | -      | 0    | -           |
-HashMap       | -     | Yes    | -      | -      | -      | 16   | 0.75        |
-LinkedHashMap | Yes   | Yes    | -      | -      | -      | 16   | 0.75        |
-TreeMap       | -     | Yes    |Yes  ASC| ?      | -      | 0    | -           |
+class         | order | unique | null | sorted | random | thread | init | load factor |
+------------- | ----- | ------ | ---- | ------ | ------ | ------ | ---- | ----------- |
+ArrayList     | Yes   | -      | Yes  | -      | Yes    | -      | 0    | -           |
+LinkedList    | Yes   | -      | Yes  | -      | -      | -      | 0    | -           |
+Vector        | Yes   | -      | Yes  | -      | Yes    | Yes    | 10   | -           |
+Stack         | Yes   | -      | Yes  | -      | Yes    | Yes    | 10   | -           |
+PriorityQueue | -     | -      |  ?   | Yes    | -      | -      | 11   | -           |
+ArrayDeque    | Yes   | -      | Yes  | -      | -      | -      | 16   | -           |
+Hashtable     | -     | Yes    |  -   | -      | -      | Yes    | 11   | 0.75        |
+HashSet       | -     | Yes    | Yes  | -      | -      | -      | 16   | 0.75        |
+LinkedHashSet | Yes   | Yes    | Yes  | -      | -      | -      | 16   | 0.75        |
+TreeSet       | -     | Yes    |  -   |Yes  ASC| ?      | -      | 0    | -           |
+HashMap       | -     | Yes    | Yes  | -      | -      | -      | 16   | 0.75        |
+LinkedHashMap | Yes   | Yes    | Yes  | -      | -      | -      | 16   | 0.75        |
+TreeMap       | -     | Yes    |  -   |Yes  ASC| ?      | -      | 0    | -           |
 
 ### Complexity
 
