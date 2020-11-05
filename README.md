@@ -76,7 +76,15 @@ ArrayList     | oldCapacity + (oldCapacity >> 1)
 LinkedList    | -
 Vector        | 2 * oldCapacity
 Stack         | 2 * oldCapacity
-PriorityQueue | oldCapacity + [ (oldCapacity < 64) ? (oldCapacity + 2) : (oldCapacity >> 1) ]
+PriorityQueue | oldCapacity + [ (oldCapacity < 64) ? (oldCapacity + 2) : (oldCapacity / 2) ]
+ArrayDeque    | oldCapacity + [ (oldCapacity < 64) ? (oldCapacity + 2) : (oldCapacity / 2) ]
+Hashtable     | 2 * oldCapacity + 1, load-factor = 0.75
+HashSet       | 2 * oldCapacity, load-factor = 0.75
+LinkedHashSet | 2 * oldCapacity, load-factor = 0.75
+TreeSet       | -
+HashMap       | 2 * oldCapacity, load-factor = 0.75
+LinkedHashMap | 2 * oldCapacity, load-factor = 0.75
+TreeMap       | -
 
 ### ArrayList
 * like an array, but no size limit.
