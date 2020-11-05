@@ -25,48 +25,48 @@
 
 ### Properties
 
-class         | order | unique | null | sorted | random | thread |
-------------- | ----- | ------ | ---- | ------ | ------ | ------ |
-ArrayList     | Yes   | -      | Yes  | -      | Yes    | -      |
-LinkedList    | Yes   | -      | Yes  | -      | -      | -      |
-Vector        | Yes   | -      | Yes  | -      | Yes    | Yes    |
-Stack         | Yes   | -      | Yes  | -      | Yes    | Yes    |
-PriorityQueue | -     | -      |  ?   | Yes    | -      | -      |
-ArrayDeque    | Yes   | -      | Yes  | -      | -      | -      |
-Hashtable     | -     | Yes    |  -   | -      | -      | Yes    |
-HashSet       | -     | Yes    | Yes  | -      | -      | -      |
-LinkedHashSet | Yes   | Yes    | Yes  | -      | -      | -      |
-TreeSet       | -     | Yes    |  -   |Yes  ASC| ?      | -      |
-HashMap       | -     | Yes    | Yes  | -      | -      | -      |
-LinkedHashMap | Yes   | Yes    | Yes  | -      | -      | -      |
-TreeMap       | -     | Yes    |  -   |Yes  ASC| ?      | -      |
+class         | order | unique | null | sorted | random | thread | Data Structure
+------------- | ----- | ------ | ---- | ------ | ------ | ------ | --------------
+ArrayList     | Yes   | -      | Yes  | -      | Yes    | -      | Dynamic Array
+LinkedList    | Yes   | -      | Yes  | -      | -      | -      | Doubly Linked List
+Vector        | Yes   | -      | Yes  | -      | Yes    | Yes    | Dynamic Array
+Stack         | Yes   | -      | Yes  | -      | Yes    | Yes    | Dynamic Array
+PriorityQueue | -     | -      |  ?   | Yes    | -      | -      | Balanced Binary Heap
+ArrayDeque    | Yes   | -      | Yes  | -      | -      | -      | Dynamic Array
+Hashtable     | -     | Yes    |  -   | -      | -      | Yes    | Array of Lists
+HashSet       | -     | Yes    | Yes  | -      | -      | -      | Hash Table
+LinkedHashSet | Yes   | Yes    | Yes  | -      | -      | -      | Hash Table + Linked List
+TreeSet       | -     | Yes    |  -   |Yes  ASC| ?      | -      | Red-black tree
+HashMap       | -     | Yes    | Yes  | -      | -      | -      | Hash Table
+LinkedHashMap | Yes   | Yes    | Yes  | -      | -      | -      | Hash Table + Linked List
+TreeMap       | -     | Yes    |  -   |Yes  ASC| ?      | -      | Red-black tree
 
 ### Complexity
 
-List                 | Add  | Remove | Get  | Contains | Next | Data Structure
----------------------|------|--------|------|----------|------|-------------------
-ArrayList            | O(1) |  O(n)  | O(1) |   O(n)   | O(1) | Dynamic Array
-LinkedList           | O(1) |  O(1)  | O(n) |   O(n)   | O(1) | Doubly Linked List
-Vector               |      |        |      |          |      | Dynamic Array
-Stack                |      |        |      |          |      | Dynamic Array
+List                 | Add  | Remove | Get  | Contains | Next |
+---------------------|------|--------|------|----------|------|
+ArrayList            | O(1) |  O(n)  | O(1) |   O(n)   | O(1) |
+LinkedList           | O(1) |  O(1)  | O(n) |   O(n)   | O(1) | 
+Vector               |      |        |      |          |      |
+Stack                |      |        |      |          |      |
 
-Queue                   |  Offer   | Peak |   Poll   | Remove | Size | Data Structure
-------------------------|----------|------|----------|--------|------|---------------------
-PriorityQueue           | O(log n) | O(1) | O(log n) |  O(n)  | O(1) | Balanced Binary Heap
-LinkedList              | O(1)     | O(1) | O(1)     |  O(1)  | O(1) | Doubly Linked List
-ArrayDeque              | O(1)     | O(1) | O(1)     |  O(n)  | O(1) | Dynamic Array
+Queue                   |  Offer   | Peak |   Poll   | Remove | Size |
+------------------------|----------|------|----------|--------|------|
+PriorityQueue           | O(log n) | O(1) | O(log n) |  O(n)  | O(1) | 
+LinkedList              | O(1)     | O(1) | O(1)     |  O(1)  | O(1) |
+ArrayDeque              | O(1)     | O(1) | O(1)     |  O(n)  | O(1) | 
 
-Set                   |    Add   |  Remove  | Contains |   Next   | Size | Data Structure
-----------------------|----------|----------|----------|----------|------|-------------------------
-HashSet               | O(1)     | O(1)     | O(1)     | O(h/n)   | O(1) | Hash Table
-LinkedHashSet         | O(1)     | O(1)     | O(1)     | O(1)     | O(1) | Hash Table + Linked List
-TreeSet               | O(log n) | O(log n) | O(log n) | O(log n) | O(1) | Red-black tree
+Set                   |    Add   |  Remove  | Contains |   Next   | Size |
+----------------------|----------|----------|----------|----------|------|
+HashSet               | O(1)     | O(1)     | O(1)     | O(h/n)   | O(1) |
+LinkedHashSet         | O(1)     | O(1)     | O(1)     | O(1)     | O(1) |
+TreeSet               | O(log n) | O(log n) | O(log n) | O(log n) | O(1) |
 
-Map                   |   Get    | ContainsKey |   Next   | Data Structure
-----------------------|----------|-------------|----------|-------------------------
-HashMap               | O(1)     |   O(1)      | O(h/n)   | Hash Table
-LinkedHashMap         | O(1)     |   O(1)      | O(1)     | Hash Table + Linked List
-TreeMap               | O(log n) |   O(log n)  | O(log n) | Red-black tree
+Map                   |   Get    | ContainsKey |   Next   |
+----------------------|----------|-------------|----------|
+HashMap               | O(1)     |   O(1)      | O(h/n)   |
+LinkedHashMap         | O(1)     |   O(1)      | O(1)     |
+TreeMap               | O(log n) |   O(log n)  | O(log n) |
 
 ### Capacity
 
