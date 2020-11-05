@@ -325,7 +325,7 @@ TreeMap       | -                                                               
             }
         }
 
-* **User-defined class (Comparable interface)** need to modify custom class.
+* **User-defined class (Comparable)** (single field) need to modify custom class.
 
         public class Main {
             public static void main(String[] args) {
@@ -356,7 +356,7 @@ TreeMap       | -                                                               
             }
         }
 
-* **User-defined class (Comparator interface)** sort by a specific field in an object without modifying it.
+* **User-defined class (Comparator)** (multiple fields) sort by a specific field in an object without modifying it.
 
         public class Main {
             public static void main(String[] args) {
