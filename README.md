@@ -310,6 +310,97 @@ TreeMap       | -                                                               
             ...
         }
 
+### Sorting
+
+* **String & Wrapper classes** implements Comparable interface by default
+
+        public class Main {
+            public static void main(String[] args) {
+                List<Integer> list = new ArrayList<>();
+                list.add(5);
+                list.add(9);
+                list.add(4);
+                Collections.sort(list);
+                list.forEach(element -> System.out.println(element));
+            }
+        }
+
+* **User-defined class (Comparable interface)**
+
+        public class Main {
+            public static void main(String[] args) {
+                List<Customer> customers = new ArrayList<>();
+                customers.add(new Customer("2"));
+                customers.add(new Customer("3"));
+                customers.add(new Customer("1"));
+                Collections.sort(customers);
+                System.out.println(customers);
+            }
+        }
+
+        public class Customer implements Comparable<Customer> {
+            private String name;
+
+            public Customer(String name) {
+                this.name = name;
+            }
+
+            @Override
+            public int compareTo(Customer other) {
+                return this.name.compareTo(other.name);
+            }
+
+            @Override
+            public String toString() {
+                return this.name;
+            }
+        }
+
+* **User-defined class (Comparator interface)**
+sort in specific field in object without modify it.
+
+    public class Main {
+        public static void main(String[] args) {
+            List<Customer> customers = new ArrayList<>();
+            customers.add(new Customer("2", "e3"));
+            customers.add(new Customer("3", "e2"));
+            customers.add(new Customer("1", "e1"));
+            Collections.sort(customers, new EmailComparator());
+            System.out.println(customers);
+        }
+    }
+
+    public class EmailComparator implements Comparator<Customer> {
+        @Override
+        public int compare(Customer o1, Customer o2) {
+            return o1.getEmail().compareTo(o2.getEmail());
+        }
+    }
+
+    public class Customer implements Comparable<Customer> {
+        private String name;
+        private String email;
+
+        public Customer(String name, String email) {
+            this.name = name;
+            this.email = email;
+        }
+
+        public String getEmail() {
+            return email;
+        }
+
+        @Override
+        public int compareTo(Customer other) {
+            return this.name.compareTo(other.name);
+        }
+
+        @Override
+        public String toString() {
+            return this.name;
+        }
+    }
+
 ### List Iterator
 
     public class Main {
@@ -358,81 +449,6 @@ TreeMap       | -                                                               
             public T next() {
                 return list.items[index++];
             }
-        }
-    }
-
-### Sort using Comparable Interface
-
-    public class Main {
-        public static void main(String[] args) {
-            List<Customer> customers = new ArrayList<>();
-            customers.add(new Customer("2"));
-            customers.add(new Customer("3"));
-            customers.add(new Customer("1"));
-            Collections.sort(customers);
-            System.out.println(customers);
-        }
-    }
-
-    public class Customer implements Comparable<Customer> {
-        private String name;
-
-        public Customer(String name) {
-            this.name = name;
-        }
-
-        @Override
-        public int compareTo(Customer other) {
-            return this.name.compareTo(other.name);
-        }
-
-        @Override
-        public String toString() {
-            return this.name;
-        }
-    }
-    
-### Sort using Comparator Interface
-
-    public class Main {
-        public static void main(String[] args) {
-            List<Customer> customers = new ArrayList<>();
-            customers.add(new Customer("2", "e3"));
-            customers.add(new Customer("3", "e2"));
-            customers.add(new Customer("1", "e1"));
-            Collections.sort(customers, new EmailComparator());
-            System.out.println(customers);
-        }
-    }
-
-    public class EmailComparator implements Comparator<Customer> {
-        @Override
-        public int compare(Customer o1, Customer o2) {
-            return o1.getEmail().compareTo(o2.getEmail());
-        }
-    }
-
-    public class Customer implements Comparable<Customer> {
-        private String name;
-        private String email;
-
-        public Customer(String name, String email) {
-            this.name = name;
-            this.email = email;
-        }
-
-        public String getEmail() {
-            return email;
-        }
-
-        @Override
-        public int compareTo(Customer other) {
-            return this.name.compareTo(other.name);
-        }
-
-        @Override
-        public String toString() {
-            return this.name;
         }
     }
 
