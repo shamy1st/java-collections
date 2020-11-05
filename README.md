@@ -25,21 +25,21 @@
 
 ### Properties
 
-class         | order | unique | null | sorted | random | thread | init | load factor |
-------------- | ----- | ------ | ---- | ------ | ------ | ------ | ---- | ----------- |
-ArrayList     | Yes   | -      | Yes  | -      | Yes    | -      | 0    | -           |
-LinkedList    | Yes   | -      | Yes  | -      | -      | -      | 0    | -           |
-Vector        | Yes   | -      | Yes  | -      | Yes    | Yes    | 10   | -           |
-Stack         | Yes   | -      | Yes  | -      | Yes    | Yes    | 10   | -           |
-PriorityQueue | -     | -      |  ?   | Yes    | -      | -      | 11   | -           |
-ArrayDeque    | Yes   | -      | Yes  | -      | -      | -      | 16   | -           |
-Hashtable     | -     | Yes    |  -   | -      | -      | Yes    | 11   | 0.75        |
-HashSet       | -     | Yes    | Yes  | -      | -      | -      | 16   | 0.75        |
-LinkedHashSet | Yes   | Yes    | Yes  | -      | -      | -      | 16   | 0.75        |
-TreeSet       | -     | Yes    |  -   |Yes  ASC| ?      | -      | 0    | -           |
-HashMap       | -     | Yes    | Yes  | -      | -      | -      | 16   | 0.75        |
-LinkedHashMap | Yes   | Yes    | Yes  | -      | -      | -      | 16   | 0.75        |
-TreeMap       | -     | Yes    |  -   |Yes  ASC| ?      | -      | 0    | -           |
+class         | order | unique | null | sorted | random | thread |
+------------- | ----- | ------ | ---- | ------ | ------ | ------ |
+ArrayList     | Yes   | -      | Yes  | -      | Yes    | -      |
+LinkedList    | Yes   | -      | Yes  | -      | -      | -      |
+Vector        | Yes   | -      | Yes  | -      | Yes    | Yes    |
+Stack         | Yes   | -      | Yes  | -      | Yes    | Yes    |
+PriorityQueue | -     | -      |  ?   | Yes    | -      | -      |
+ArrayDeque    | Yes   | -      | Yes  | -      | -      | -      |
+Hashtable     | -     | Yes    |  -   | -      | -      | Yes    |
+HashSet       | -     | Yes    | Yes  | -      | -      | -      |
+LinkedHashSet | Yes   | Yes    | Yes  | -      | -      | -      |
+TreeSet       | -     | Yes    |  -   |Yes  ASC| ?      | -      |
+HashMap       | -     | Yes    | Yes  | -      | -      | -      |
+LinkedHashMap | Yes   | Yes    | Yes  | -      | -      | -      |
+TreeMap       | -     | Yes    |  -   |Yes  ASC| ?      | -      |
 
 ### Complexity
 
@@ -64,45 +64,27 @@ TreeSet               | O(log n) | O(log n) | O(log n) | O(log n) | O(1) | Red-b
 
 Map                   |   Get    | ContainsKey |   Next   | Data Structure
 ----------------------|----------|-------------|----------|-------------------------
-HashMap               | O(1)     |   O(1)      | O(h / n) | Hash Table
+HashMap               | O(1)     |   O(1)      | O(h/n)   | Hash Table
 LinkedHashMap         | O(1)     |   O(1)      | O(1)     | Hash Table + Linked List
 TreeMap               | O(log n) |   O(log n)  | O(log n) | Red-black tree
 
 ### Capacity
 
-class         | capacity
---------------|-------------------------------------------------------------------------------
-ArrayList     | 1.5 * oldCapacity
-LinkedList    | -
-Vector        | 2 * oldCapacity
-Stack         | 2 * oldCapacity
-PriorityQueue | if(oldCapacity < 64) then (2 * oldCapacity + 2) else (1.5 * oldCapacity)
-ArrayDeque    | if(oldCapacity < 64) then (2 * oldCapacity + 2) else (1.5 * oldCapacity)
-Hashtable     | 2 * oldCapacity + 1, load-factor = 0.75
-HashSet       | 2 * oldCapacity, load-factor = 0.75
-LinkedHashSet | 2 * oldCapacity, load-factor = 0.75
-TreeSet       | -
-HashMap       | 2 * oldCapacity, load-factor = 0.75
-LinkedHashMap | 2 * oldCapacity, load-factor = 0.75
-TreeMap       | -
-
-### ArrayList
-* like an array, but no size limit.
-* slower than LinkedList because a lot of shifting while remove.
-* better than LinkedList for storing and accessing data.
-* increments 50% of current array if the number of elements exceeds from its capacity.
-
-        public class ArrayList<E> extends AbstractList<E>
-                implements List<E>, RandomAccess, Cloneable, java.io.Serializable
-        {
-            ...
-        }
-
-* **capacity** = oldCapacity + (oldCapacity >> 1)
-
-    size     | 0 | 1  | 11 | 16 | 23 | 34 | 50 | 74  | 110 | 164 | 245 | 367 | 550 | ...
-    -------- | - | -- | -- | -- | -- | -- | -- | --- | --- | --- | --- | --- | --- | ---
-    capacity | 0 | 10 | 15 | 22 | 33 | 49 | 73 | 109 | 163 | 244 | 366 | 549 | 823 | ...
+class         | capacity                                                                 | init | load factor |
+--------------|--------------------------------------------------------------------------|------|-------------|
+ArrayList     | 1.5 * oldCapacity                                                        | 0    | -           |
+LinkedList    | -                                                                        | 0    | -           |
+Vector        | 2 * oldCapacity                                                          | 10   | -           |
+Stack         | 2 * oldCapacity                                                          | 10   | -           |
+PriorityQueue | if(oldCapacity < 64) then (2 * oldCapacity + 2) else (1.5 * oldCapacity) | 11   | -           |
+ArrayDeque    | if(oldCapacity < 64) then (2 * oldCapacity + 2) else (1.5 * oldCapacity) | 16   | -           |
+Hashtable     | 2 * oldCapacity + 1, load-factor = 0.75                                  | 11   | 0.75        |
+HashSet       | 2 * oldCapacity, load-factor = 0.75                                      | 16   | 0.75        |
+LinkedHashSet | 2 * oldCapacity, load-factor = 0.75                                      | 16   | 0.75        |
+TreeSet       | -                                                                        | 0    | -           |
+HashMap       | 2 * oldCapacity, load-factor = 0.75                                      | 16   | 0.75        |
+LinkedHashMap | 2 * oldCapacity, load-factor = 0.75                                      | 16   | 0.75        |
+TreeMap       | -                                                                        | 0    | -           |
 
         public class Main {
             public static void main(String[] args) throws Exception {
@@ -126,6 +108,24 @@ TreeMap       | -
                 return internalArray.length;
             }
         }
+
+### ArrayList
+* like an array, but no size limit.
+* slower than LinkedList because a lot of shifting while remove.
+* better than LinkedList for storing and accessing data.
+* increments 50% of current array if the number of elements exceeds from its capacity.
+
+        public class ArrayList<E> extends AbstractList<E>
+                implements List<E>, RandomAccess, Cloneable, java.io.Serializable
+        {
+            ...
+        }
+
+* **capacity** = oldCapacity + (oldCapacity >> 1)
+
+    size     | 0 | 1  | 11 | 16 | 23 | 34 | 50 | 74  | 110 | 164 | 245 | 367 | 550 | ...
+    -------- | - | -- | -- | -- | -- | -- | -- | --- | --- | --- | --- | --- | --- | ---
+    capacity | 0 | 10 | 15 | 22 | 33 | 49 | 73 | 109 | 163 | 244 | 366 | 549 | 823 | ...
 
 ### LinkedList
 * provides a linked-list data structure.
