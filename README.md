@@ -15,7 +15,7 @@
 
 **Map Interface** key and value pair, keys are unique.
 
-**SortedMap Interface**
+**SortedMap Interface** provides a total ordering of its elements (elements can be traversed in sorted order of keys).
 
 ### Hierarchy
 
