@@ -36,10 +36,10 @@ ArrayDeque    | Yes   | -      |  -   | -      | -      | -      | Dynamic Array
 Hashtable     | -     | Yes    |  -   | -      | -      | Yes    | Array of Lists
 HashSet       | -     | Yes    | Yes  | -      | -      | -      | Hash Table
 LinkedHashSet | Yes   | Yes    | Yes  | -      | -      | -      | Hash Table + Linked List
-TreeSet       | -     | Yes    |  -   |Yes  ASC| ?      | -      | Red-black tree
+TreeSet       | -     | Yes    |  -   |Yes  ASC| -      | -      | Red-black tree
 HashMap       | -     | Yes    | Yes  | -      | -      | -      | Hash Table
 LinkedHashMap | Yes   | Yes    | Yes  | -      | -      | -      | Hash Table + Linked List
-TreeMap       | -     | Yes    |  -   |Yes  ASC| ?      | -      | Red-black tree
+TreeMap       | -     | Yes    |  -   |Yes  ASC| -      | -      | Red-black tree
 
 ### Complexity
 
